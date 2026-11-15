@@ -577,10 +577,23 @@ img {
         font-size: 12px;
     }
 
-    .view-all {
-        font-size: 10px;
-        padding: 9px 12px;
-    }
+    
+.view-all {
+    display: inline-block;
+    background: #168044;
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.view-all:hover {
+    background: #07552f;
+}
+
 
     .fruit-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
