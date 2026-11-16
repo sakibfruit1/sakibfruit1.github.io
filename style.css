@@ -43,6 +43,7 @@ img {
 }
 
 
+
 /* =================================
    HEADER
 ================================= */
@@ -53,19 +54,16 @@ img {
     padding: 15px 3%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 18px;
     background: var(--white);
     border-bottom: 1px solid #edf0ec;
 }
 
-/* BRAND LOGO */
+/* LOGO */
 .logo {
     display: flex;
     align-items: center;
-    justify-self: start;
-    flex-shrink: 0;
-    font-size: 36px;
+    flex: 0 0 auto;
+    font-size: 34px;
     font-weight: 800;
     letter-spacing: -1.8px;
     white-space: nowrap;
@@ -86,9 +84,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0 1 auto;
-    gap: 5px;
-    flex-wrap: nowrap;
+    flex: 1;
+    gap: 4px;
+    margin: 0 20px;
+    white-space: nowrap;
 }
 
 .navigation a {
@@ -106,30 +105,24 @@ img {
     color: var(--white);
 }
 
-/* HEADER ACTIONS */
+/* RIGHT SIDE ACTIONS */
 .header-actions {
     display: flex;
     align-items: center;
-    justify-self: end;
     justify-content: flex-end;
-    gap: 20px;
-    flex-shrink: 0;
+    flex: 0 0 auto;
+    gap: 12px;
 }
 
-/* SEARCH ICON */
+/* SEARCH */
 .header-search {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     color: var(--text);
-    transition: 0.3s ease;
-}
-
-.header-search:hover {
-    background: var(--light-green);
 }
 
 .header-search svg {
@@ -149,18 +142,13 @@ img {
     justify-content: center;
     background: var(--dark-green);
     color: var(--white);
-    padding: 13px 22px;
+    padding: 13px 18px;
     border-radius: 30px;
     font-size: 13px;
     font-weight: 600;
     white-space: nowrap;
-    transition: 0.3s ease;
 }
 
-.header-button:hover {
-    background: var(--green);
-    transform: translateY(-2px);
-}
 
 
 /* =================================
