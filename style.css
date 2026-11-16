@@ -43,18 +43,19 @@ img {
 }
 
 
+
 /* =================================
-   SAKIBFRUIT - HEADER
+   HEADER
 ================================= */
 
 .header {
     width: 100%;
-    min-height: 95px;
+    min-height: 100px;
     padding: 15px 4%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 28px;
     background: var(--white);
     border-bottom: 1px solid #edf0ec;
 }
@@ -63,11 +64,11 @@ img {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 38px;
-    font-weight: 800;
-    letter-spacing: -2px;
-    white-space: nowrap;
     flex-shrink: 0;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -1.8px;
+    white-space: nowrap;
 }
 
 .logo span {
@@ -85,14 +86,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
     flex: 1;
+    gap: 7px;
 }
 
 .navigation a {
-    padding: 11px 16px;
+    padding: 10px 12px;
     border-radius: 30px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     white-space: nowrap;
     transition: 0.3s ease;
@@ -104,6 +105,41 @@ img {
     color: var(--white);
 }
 
+/* HEADER ACTIONS */
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+/* SEARCH ICON */
+.header-search {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--text);
+    transition: 0.3s ease;
+}
+
+.header-search:hover {
+    background: var(--light-green);
+}
+
+.header-search svg {
+    width: 21px;
+    height: 21px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 /* EXPLORE BUTTON */
 .header-button {
     display: inline-flex;
@@ -111,12 +147,11 @@ img {
     justify-content: center;
     background: var(--dark-green);
     color: var(--white);
-    padding: 14px 25px;
+    padding: 13px 22px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     white-space: nowrap;
-    flex-shrink: 0;
     transition: 0.3s ease;
 }
 
@@ -466,16 +501,30 @@ img {
 
 @media (max-width: 1000px) {
 
-    .header {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
-    .navigation {
-        order: 3;
-        width: 100%;
-        flex-wrap: wrap;
-    }
+  .header {
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.logo-leaf {
+    font-size: 32px;
+}
+
+.navigation {
+    order: 3;
+    flex: 0 0 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-actions {
+    margin-left: auto;
+}    
 
     .hero {
         grid-template-columns: 1fr 0.8fr;
@@ -497,28 +546,53 @@ img {
 
 @media (max-width: 650px) {
 
-    .header {
-        padding: 17px 5%;
-        gap: 13px;
-    }
+    
+.header {
+    padding: 14px 5%;
+    gap: 12px;
+}
 
-    .logo {
-        font-size: 25px;
-    }
+.logo {
+    font-size: 27px;
+}
 
-    .header-button {
-        padding: 10px 14px;
-        font-size: 11px;
-    }
+.logo-leaf {
+    font-size: 28px;
+}
 
-    .navigation {
-        gap: 4px;
-    }
+.header-actions {
+    gap: 8px;
+}
 
-    .navigation a {
-        font-size: 11px;
-        padding: 7px 10px;
-    }
+.header-search {
+    width: 35px;
+    height: 35px;
+}
+
+.header-search svg {
+    width: 19px;
+    height: 19px;
+}
+
+.header-button {
+    padding: 10px 13px;
+    font-size: 11px;
+}
+
+.navigation {
+    order: 3;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.navigation a {
+    padding: 7px 8px;
+    font-size: 11px;
+}
+
 
     .hero {
         grid-template-columns: 1fr;
