@@ -47,22 +47,28 @@ img {
    HEADER
 ================================= */
 
+
+/* DESKTOP HEADER */
 .header {
     width: 100%;
-    min-height: 85px;
-    padding: 15px 4.5%;
-    display: flex;
+    min-height: 95px;
+    padding: 15px 4%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
     gap: 25px;
     background: var(--white);
     border-bottom: 1px solid #edf0ec;
 }
 
+/* BRAND LOGO */
 .logo {
-    font-size: 29px;
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    font-size: 38px;
     font-weight: 800;
-    letter-spacing: -1.5px;
+    letter-spacing: -2px;
     white-space: nowrap;
 }
 
@@ -72,21 +78,24 @@ img {
 
 .logo-leaf {
     color: var(--green);
-    margin-right: 5px;
+    font-size: 38px;
+    margin-right: 7px;
 }
 
+/* NAVIGATION */
 .navigation {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 9px;
+    gap: 12px;
 }
 
 .navigation a {
-    padding: 9px 15px;
+    padding: 11px 16px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
+    white-space: nowrap;
     transition: 0.3s ease;
 }
 
@@ -96,12 +105,14 @@ img {
     color: var(--white);
 }
 
+/* EXPLORE BUTTON */
 .header-button {
+    justify-self: end;
     background: var(--dark-green);
     color: var(--white);
-    padding: 12px 20px;
+    padding: 14px 25px;
     border-radius: 30px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     white-space: nowrap;
     transition: 0.3s ease;
@@ -111,6 +122,7 @@ img {
     background: var(--green);
     transform: translateY(-2px);
 }
+
 
 
 /* =================================
