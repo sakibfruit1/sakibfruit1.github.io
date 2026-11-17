@@ -396,10 +396,26 @@ img {
     background:
         radial-gradient(circle at 90% 20%, #268b4b, transparent 45%),
         linear-gradient(120deg, #064b2b, #08753d);
+    position: relative;
+    overflow: hidden;
 }
 
 .nutrition-content {
-    max-width: 520px;
+    max-width: 58%;
+    position: relative;
+    z-index: 2;
+}
+
+/* NUTRITION ORANGE IMAGE */
+.nutrition-orange {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 45%;
+    height: 100%;
+    object-fit: contain;
+    object-position: right center;
+    z-index: 1;
 }
 
 .nutrition-content span {
