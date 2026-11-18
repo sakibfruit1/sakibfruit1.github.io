@@ -1091,3 +1091,26 @@ img {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* MODERN SCROLL REVEAL ANIMATION */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal.revealed {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
