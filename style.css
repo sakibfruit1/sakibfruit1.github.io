@@ -756,24 +756,29 @@ img {
 ================================= */
 
 .benefits-section {
-    padding: 65px 5%;
-    text-align: center;
+    padding: 75px 5%;
     background: #ffffff;
+    text-align: center;
 }
 
 .section-intro {
     max-width: 650px;
-    margin: 0 auto 35px;
+    margin: 0 auto 42px;
 }
 
 .section-intro .section-line {
-    margin: 0 auto 15px;
+    display: block;
+    width: 48px;
+    height: 3px;
+    background: var(--green);
+    border-radius: 5px;
+    margin: 0 auto 18px;
 }
 
 .section-label {
     display: block;
     color: var(--green);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 1.5px;
     margin-bottom: 12px;
@@ -783,59 +788,61 @@ img {
 .about-section h2 {
     color: var(--text);
     font-size: 30px;
+    font-weight: 800;
     margin-bottom: 12px;
 }
 
 .section-intro p,
 .about-section p {
     color: var(--muted);
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.8;
 }
 
 .benefits-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
     max-width: 1100px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 .benefit-card {
-    padding: 30px 22px;
-    background: #f8fbf7;
-    border: 1px solid #e8f0e7;
-    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid #e9efe9;
+    border-radius: 18px;
+    padding: 32px 23px;
+    box-shadow: 0 8px 25px rgba(20, 70, 35, 0.05);
     transition: 0.3s ease;
 }
 
 .benefit-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(20, 80, 40, 0.08);
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(20, 70, 35, 0.10);
+    border-color: #cce6d1;
 }
 
 .benefit-icon {
-    width: 58px;
-    height: 58px;
+    width: 65px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 18px;
-    border-radius: 50%;
-    background: #e8f5e8;
-    color: var(--green);
-    font-size: 27px;
+    margin: 0 auto 20px;
+    background: var(--light-green);
+    border-radius: 18px;
+    font-size: 29px;
 }
 
 .benefit-card h3 {
-    font-size: 17px;
     color: var(--text);
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 12px;
 }
 
 .benefit-card p {
     color: var(--muted);
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.7;
 }
 
@@ -845,12 +852,12 @@ img {
 ================================= */
 
 .shopping-section {
+    padding: 65px 5%;
+    background: #e9f5e8;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 35px;
-    padding: 55px 8%;
-    background: #eaf5e9;
     text-align: left;
 }
 
@@ -862,41 +869,45 @@ img {
     align-items: center;
     justify-content: center;
     background: #ffffff;
-    border-radius: 25px;
+    border-radius: 28px;
     font-size: 48px;
+    box-shadow: 0 8px 25px rgba(20, 70, 35, 0.07);
 }
 
 .shopping-content {
-    max-width: 600px;
+    max-width: 620px;
 }
 
 .shopping-content h2 {
     color: var(--text);
-    font-size: 29px;
+    font-size: 30px;
+    font-weight: 800;
     margin-bottom: 12px;
 }
 
 .shopping-content p {
     color: var(--muted);
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .shopping-button {
-    display: inline-block;
-    padding: 12px 23px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 25px;
     background: var(--dark-green);
     color: #ffffff;
     border-radius: 30px;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 700;
     transition: 0.3s ease;
 }
 
 .shopping-button:hover {
     background: var(--green);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
 
 
@@ -905,71 +916,80 @@ img {
 ================================= */
 
 .about-section {
-    padding: 65px 8%;
-    text-align: center;
+    padding: 75px 5%;
     background: #ffffff;
+    text-align: center;
 }
 
 .about-icon {
-    width: 62px;
-    height: 62px;
+    width: 65px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 18px;
+    margin: 0 auto 20px;
+    background: var(--light-green);
     border-radius: 50%;
-    background: #e8f5e8;
     font-size: 30px;
 }
 
+.about-section .section-label {
+    margin-bottom: 10px;
+}
+
 .about-section p {
-    max-width: 650px;
+    max-width: 680px;
     margin: 0 auto;
 }
 
 
 /* =================================
-   RESPONSIVE DESIGN
+   MOBILE RESPONSIVENESS
 ================================= */
 
 @media (max-width: 650px) {
 
     .benefits-section {
-        padding: 45px 5%;
+        padding: 55px 5%;
+    }
+
+    .section-intro {
+        margin-bottom: 30px;
     }
 
     .section-intro h2,
     .about-section h2 {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .benefits-container {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 17px;
     }
 
     .benefit-card {
-        padding: 25px 20px;
+        padding: 27px 20px;
     }
 
     .shopping-section {
+        padding: 45px 7%;
         flex-direction: column;
         text-align: center;
-        gap: 20px;
-        padding: 45px 6%;
+        gap: 22px;
     }
 
     .shopping-icon {
         width: 80px;
         height: 80px;
+        border-radius: 23px;
         font-size: 38px;
     }
 
     .shopping-content h2 {
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .about-section {
-        padding: 45px 7%;
+        padding: 55px 7%;
     }
 }
