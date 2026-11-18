@@ -1168,3 +1168,111 @@ img {
         transition: none;
     }
 }
+
+
+/* =================================
+   SAKIBFRUIT - MANGO HERO
+================================= */
+
+.mango-hero {
+    min-height: 520px;
+    padding: 65px 5%;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 35px;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 90% 50%, #fcebc9 0%, transparent 55%),
+        linear-gradient(110deg, #ffffff 55%, #fff9ed 100%);
+}
+
+.mango-hero-content {
+    max-width: 650px;
+}
+
+.mango-label {
+    display: inline-block;
+    background: #fff0d2;
+    color: #98601b;
+    padding: 9px 17px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.mango-hero h1 {
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: -2.5px;
+    margin-bottom: 20px;
+}
+
+.mango-hero h1 span {
+    color: #e69a24;
+    font-style: italic;
+}
+
+.mango-hero-content > p {
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 540px;
+    margin-bottom: 28px;
+}
+
+.mango-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.mango-highlights div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.mango-highlights strong {
+    color: var(--dark-green);
+    font-size: 14px;
+}
+
+.mango-highlights span {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.mango-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark-green);
+    color: white;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.mango-button:hover {
+    background: var(--green);
+    transform: translateY(-3px);
+}
+
+.mango-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.mango-hero-image img {
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    object-fit: contain;
+}
