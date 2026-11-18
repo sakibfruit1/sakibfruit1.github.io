@@ -1039,12 +1039,14 @@ img {
 /* Fruit cards */
 .fruit-card {
     transition: transform 0.35s ease,
-                box-shadow 0.35s ease;
+                box-shadow 0.35s ease,
+                border-color 0.35s ease;
 }
 
 .fruit-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(20, 70, 35, 0.12);
+    box-shadow: 0 16px 32px rgba(20, 80, 40, 0.13);
+    border-color: #dceadd;
 }
 
 /* Nutrition spotlight */
