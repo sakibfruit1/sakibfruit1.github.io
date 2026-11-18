@@ -92,17 +92,35 @@ img {
 
 .navigation a {
     padding: 10px 9px;
-    border-radius: 30px;
+    border-radius: 0;
     font-size: 13px;
     font-weight: 600;
     white-space: nowrap;
-    transition: 0.3s ease;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Animated underline */
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background: var(--green);
+    transition: width 0.3s ease;
+}
+
+.navigation a:hover::after,
+.navigation .active::after {
+    width: calc(100% - 18px);
 }
 
 .navigation a:hover,
 .navigation .active {
-    background: var(--green);
-    color: var(--white);
+    background: transparent;
+    color: var(--green);
 }
 
 /* RIGHT SIDE ACTIONS */
