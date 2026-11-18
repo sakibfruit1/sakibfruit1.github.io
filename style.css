@@ -427,6 +427,20 @@ img {
     z-index: 1;
 }
 
+/* Floating orange animation */
+@keyframes floatOrange {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.nutrition-orange {
+    animation: floatOrange 4s ease-in-out infinite;
+}
+
 .nutrition-content span {
     font-size: 13px;
     font-weight: 600;
