@@ -20,3 +20,49 @@ revealElements.forEach(element => {
     element.classList.add('reveal');
     revealObserver.observe(element);
 });
+
+// SAKIBFRUIT SEARCH FUNCTIONALITY
+
+const fruitSearch = document.getElementById("fruitSearch");
+const searchButton = document.getElementById("searchButton");
+const searchMessage = document.getElementById("searchMessage");
+
+const fruitPages = {
+    "mango": "mango.html",
+    "banana": "banana.html",
+    "orange": "orange.html",
+    "pineapple": "pineapple.html",
+    "watermelon": "watermelon.html",
+    "pawpaw": "pawpaw.html",
+    "papaya": "pawpaw.html",
+    "avocado": "avocado.html",
+    "guava": "guava.html",
+    "coconut": "coconut.html",
+    "passion fruit": "passion-fruit.html",
+    "apple": "apple.html",
+    "grapes": "grapes.html"
+};
+
+function searchFruit() {
+    const fruit = fruitSearch.value.trim().toLowerCase();
+
+    if (fruit === "") {
+        searchMessage.textContent = "Please enter a fruit name.";
+        return;
+    }
+
+    if (fruitPages[fruit]) {
+        window.location.href = fruitPages[fruit];
+    } else {
+        searchMessage.textContent =
+            "Sorry, we couldn't find that fruit. Try another name.";
+    }
+}
+
+searchButton.addEventListener("click", searchFruit);
+
+fruitSearch.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        searchFruit();
+    }
+});
