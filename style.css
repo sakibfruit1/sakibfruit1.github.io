@@ -1276,3 +1276,103 @@ img {
     height: auto;
     object-fit: contain;
 }
+
+/* =================================
+   MANGO NUTRITION SECTION
+================================= */
+
+.mango-nutrition {
+    padding: 75px 5%;
+    background: #ffffff;
+}
+
+.mango-section-intro {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.mango-section-intro h2 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    margin: 15px 0;
+    color: var(--text);
+}
+
+.mango-section-intro p {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.nutrition-facts-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    background: #fbfcfa;
+    border: 1px solid #edf0ec;
+    border-radius: 22px;
+    box-shadow: 0 10px 35px rgba(20, 70, 35, 0.06);
+}
+
+.nutrition-facts-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e5ebe5;
+    margin-bottom: 25px;
+}
+
+.nutrition-facts-heading h3 {
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.nutrition-facts-heading span {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.nutrition-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.nutrition-fact {
+    padding: 25px 15px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #edf0ec;
+    border-radius: 15px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.nutrition-fact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(20, 70, 35, 0.09);
+}
+
+.nutrition-fact strong {
+    display: block;
+    color: #d98b20;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.nutrition-fact span {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nutrition-note {
+    margin-top: 25px;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.6;
+}
