@@ -274,10 +274,11 @@ img {
 }
 
 .hero-image img {
-    width: 100%;
-    max-width: 480px;
-    max-height: 480px;
+    width: 110%;
+    max-width: 560px;
+    max-height: 560px;
     object-fit: contain;
+    transform: translateX(18px);
     filter: drop-shadow(0 15px 25px rgba(20, 60, 30, 0.08));
 }
 
