@@ -397,6 +397,7 @@ img {
    NUTRITION SPOTLIGHT
 ================================= */
 
+/* ANIMATED NUTRITION SPOTLIGHT */
 .nutrition-section {
     margin: 35px 4.5%;
     padding: 35px;
@@ -404,9 +405,23 @@ img {
     color: var(--white);
     background:
         radial-gradient(circle at 90% 20%, #268b4b, transparent 45%),
-        linear-gradient(120deg, #064b2b, #08753d);
+        linear-gradient(120deg, #064b2b, #08753d, #064b2b);
+    background-size: 200% 200%;
+    animation: gradientMove 8s ease infinite;
     position: relative;
     overflow: hidden;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .nutrition-content {
