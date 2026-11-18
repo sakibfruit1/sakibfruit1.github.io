@@ -266,11 +266,14 @@ img {
 
 /* HERO PORTRAIT */
 
-.hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 0;
+
+.hero-image img {
+    width: 120%;
+    max-width: 620px;
+    max-height: 560px;
+    object-fit: contain;
+    transform: translateX(25px);
+    filter: drop-shadow(0 15px 25px rgba(20, 60, 30, 0.08));
 }
 
 .hero-image img {
