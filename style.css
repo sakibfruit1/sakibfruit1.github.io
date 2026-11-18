@@ -993,3 +993,101 @@ img {
         padding: 55px 7%;
     }
 }
+
+/* =================================
+   SAKIBFRUIT - MODERN ANIMATIONS
+================================= */
+
+/* Smooth page entrance */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero text entrance */
+.hero-content {
+    animation: fadeUp 1s ease both;
+}
+
+/* Hero portrait entrance */
+.hero-image {
+    animation: heroImageIn 1.2s ease both;
+}
+
+@keyframes heroImageIn {
+    from {
+        opacity: 0;
+        transform: translateX(45px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fruit cards */
+.fruit-card {
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.fruit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(20, 70, 35, 0.12);
+}
+
+/* Nutrition spotlight */
+.nutrition-section {
+    animation: fadeUp 1s ease both;
+    animation-delay: 0.2s;
+}
+
+/* Benefit cards */
+.benefit-card {
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(20, 70, 35, 0.12);
+}
+
+/* Shopping icon */
+.shopping-icon {
+    transition: transform 0.4s ease;
+}
+
+.shopping-section:hover .shopping-icon {
+    transform: rotate(-8deg) scale(1.06);
+}
+
+/* Buttons */
+.header-button,
+.shopping-button,
+.view-all {
+    transition: all 0.3s ease;
+}
+
+.header-button:hover,
+.shopping-button:hover,
+.view-all:hover {
+    transform: translateY(-3px);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
