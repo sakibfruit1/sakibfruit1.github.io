@@ -1064,12 +1064,12 @@ img {
 
 /* Hero text entrance */
 .hero-content {
-    animation: fadeUp 1s ease both;
+    animation: fadeUp 2s ease both;
 }
 
 /* Hero portrait entrance */
 .hero-image {
-    animation: heroImageIn 1.2s ease both;
+    animation: heroImageIn 2.5s ease both;
 }
 
 @keyframes heroImageIn {
@@ -1098,8 +1098,8 @@ img {
 
 /* Nutrition spotlight */
 .nutrition-section {
-    animation: fadeUp 1s ease both;
-    animation-delay: 0.2s;
+    animation: fadeUp 2s ease both;
+    animation-delay: 4s;
 }
 
 /* Benefit cards */
