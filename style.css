@@ -1099,7 +1099,7 @@ img {
 /* Nutrition spotlight */
 .nutrition-section {
     animation: fadeUp 2s ease both;
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
 
 /* Benefit cards */
