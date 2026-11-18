@@ -66,3 +66,16 @@ fruitSearch.addEventListener("keydown", function(event) {
         searchFruit();
     }
 });
+
+// HEADER SEARCH ICON
+
+const headerSearch = document.getElementById("headerSearch");
+
+headerSearch.addEventListener("click", function() {
+    fruitSearch.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+    fruitSearch.focus();
+});
