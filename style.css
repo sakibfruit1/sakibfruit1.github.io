@@ -750,3 +750,226 @@ img {
         animation-duration: 0.01ms !important;
     }
 }
+
+/* =================================
+   BENEFITS SECTION
+================================= */
+
+.benefits-section {
+    padding: 65px 5%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.section-intro {
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
+.section-intro .section-line {
+    margin: 0 auto 15px;
+}
+
+.section-label {
+    display: block;
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.section-intro h2,
+.about-section h2 {
+    color: var(--text);
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.section-intro p,
+.about-section p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    padding: 30px 22px;
+    background: #f8fbf7;
+    border: 1px solid #e8f0e7;
+    border-radius: 16px;
+    transition: 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(20, 80, 40, 0.08);
+}
+
+.benefit-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #e8f5e8;
+    color: var(--green);
+    font-size: 27px;
+}
+
+.benefit-card h3 {
+    font-size: 17px;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   SHOPPING SECTION
+================================= */
+
+.shopping-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 55px 8%;
+    background: #eaf5e9;
+    text-align: left;
+}
+
+.shopping-icon {
+    width: 105px;
+    height: 105px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 25px;
+    font-size: 48px;
+}
+
+.shopping-content {
+    max-width: 600px;
+}
+
+.shopping-content h2 {
+    color: var(--text);
+    font-size: 29px;
+    margin-bottom: 12px;
+}
+
+.shopping-content p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.shopping-button {
+    display: inline-block;
+    padding: 12px 23px;
+    background: var(--dark-green);
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.shopping-button:hover {
+    background: var(--green);
+    transform: translateY(-2px);
+}
+
+
+/* =================================
+   ABOUT SECTION
+================================= */
+
+.about-section {
+    padding: 65px 8%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.about-icon {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #e8f5e8;
+    font-size: 30px;
+}
+
+.about-section p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 650px) {
+
+    .benefits-section {
+        padding: 45px 5%;
+    }
+
+    .section-intro h2,
+    .about-section h2 {
+        font-size: 24px;
+    }
+
+    .benefits-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .benefit-card {
+        padding: 25px 20px;
+    }
+
+    .shopping-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 45px 6%;
+    }
+
+    .shopping-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 38px;
+    }
+
+    .shopping-content h2 {
+        font-size: 24px;
+    }
+
+    .about-section {
+        padding: 45px 7%;
+    }
+}
