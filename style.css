@@ -1570,3 +1570,64 @@ img {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* =================================
+   MANGO NUTRIENT DEFICIENCIES
+================================= */
+
+.mango-deficiency {
+    padding: 75px 5%;
+    background: #ffffff;
+}
+
+.mango-deficiency-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.mango-deficiency-card {
+    padding: 28px 24px;
+    background: #fbfcfa;
+    border: 1px solid #edf0ec;
+    border-radius: 18px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.mango-deficiency-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(20, 70, 35, 0.08);
+}
+
+.mango-deficiency-card h3 {
+    color: #26733e;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.mango-deficiency-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.mango-deficiency-note {
+    max-width: 850px;
+    margin: 28px auto 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .mango-deficiency-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
