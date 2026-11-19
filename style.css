@@ -1444,3 +1444,59 @@ img {
     font-size: 11px;
     font-weight: 700;
 }
+
+/* =================================
+   MANGO HEALTH BENEFITS
+================================= */
+
+.mango-benefits {
+    padding: 75px 5%;
+    background: #ffffff;
+}
+
+.mango-benefits-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.mango-benefit-card {
+    padding: 30px 25px;
+    background: #fbfcfa;
+    border: 1px solid #edf0ec;
+    border-radius: 20px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.mango-benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(20, 70, 35, 0.08);
+}
+
+.benefit-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf7ed;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.mango-benefit-card h3 {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.mango-benefit-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
