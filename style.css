@@ -1699,3 +1699,197 @@ img {
 }
 
 
+/* =================================
+   SAKIBFRUIT - ALL FRUITS PAGE
+================================= */
+
+.fruits-page-hero {
+    padding: 85px 5% 65px;
+    text-align: center;
+    background:
+        radial-gradient(ellipse at 50% 100%, #e9f5e8 0%, transparent 65%),
+        #ffffff;
+}
+
+.fruits-page-hero > span {
+    display: inline-block;
+    color: #26733e;
+    background: #edf7ed;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.fruits-page-hero h1 {
+    font-size: clamp(35px, 5vw, 58px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.fruits-page-hero h1 span {
+    display: block;
+    color: #168044;
+    font-style: italic;
+}
+
+.fruits-page-hero p {
+    max-width: 580px;
+    margin: auto;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* FRUITS COLLECTION */
+
+.all-fruits-section {
+    padding: 65px 5% 85px;
+    background: #fbfcfa;
+}
+
+.all-fruits-heading {
+    max-width: 1150px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.all-fruits-heading h2 {
+    font-size: 27px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 7px;
+}
+
+.all-fruits-heading p {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.all-fruits-heading > span {
+    background: #edf7ed;
+    color: #26733e;
+    padding: 9px 16px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* FRUIT GRID */
+
+.all-fruits-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.all-fruit-card {
+    display: block;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #edf0ec;
+    border-radius: 18px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 5px 20px rgba(20, 70, 35, 0.04);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.all-fruit-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(20, 70, 35, 0.10);
+}
+
+.all-fruit-image {
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f7ed;
+    font-size: 75px;
+    transition: transform 0.3s ease;
+}
+
+.all-fruit-card:hover .all-fruit-image {
+    transform: scale(1.04);
+}
+
+.all-fruit-info {
+    padding: 22px;
+}
+
+.all-fruit-info h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.all-fruit-info p {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 17px;
+}
+
+.all-fruit-info > span {
+    color: #168044;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .all-fruits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 520px) {
+    .fruits-page-hero {
+        padding: 65px 6% 50px;
+    }
+
+    .all-fruits-section {
+        padding: 45px 5% 60px;
+    }
+
+    .all-fruits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 13px;
+    }
+
+    .all-fruit-image {
+        height: 130px;
+        font-size: 55px;
+    }
+
+    .all-fruit-info {
+        padding: 15px 12px;
+    }
+
+    .all-fruit-info h3 {
+        font-size: 15px;
+    }
+
+    .all-fruit-info p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .all-fruits-heading h2 {
+        font-size: 21px;
+    }
+}
+
