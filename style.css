@@ -1500,3 +1500,73 @@ img {
     font-size: 13px;
     line-height: 1.8;
 }
+
+/* =================================
+   HOW TO ENJOY MANGO
+================================= */
+
+.mango-enjoy {
+    padding: 75px 5%;
+    background: #f8fbf7;
+}
+
+.mango-enjoy-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.mango-enjoy-card {
+    padding: 30px 22px;
+    background: #ffffff;
+    border: 1px solid #edf0ec;
+    border-radius: 20px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.mango-enjoy-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(20, 70, 35, 0.08);
+}
+
+.enjoy-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff3df;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.mango-enjoy-card h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.mango-enjoy-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* TABLET AND MOBILE */
+
+@media (max-width: 768px) {
+    .mango-enjoy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .mango-enjoy-grid {
+        grid-template-columns: 1fr;
+    }
+}
