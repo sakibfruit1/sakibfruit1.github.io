@@ -1376,3 +1376,71 @@ img {
     text-align: center;
     line-height: 1.6;
 }
+
+/* =================================
+   MANGO VITAMINS & MINERALS
+================================= */
+
+.mango-vitamins {
+    padding: 75px 5%;
+    background: #f8fbf7;
+}
+
+.mango-vitamins-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.mango-vitamin-card {
+    padding: 30px 25px;
+    background: #ffffff;
+    border: 1px solid #edf0ec;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(20, 70, 35, 0.04);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.mango-vitamin-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(20, 70, 35, 0.09);
+}
+
+.vitamin-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff3df;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.mango-vitamin-card h3 {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.mango-vitamin-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.mango-vitamin-card > span {
+    display: inline-block;
+    padding: 7px 12px;
+    background: #edf7ed;
+    color: #26733e;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
