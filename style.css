@@ -3369,3 +3369,71 @@ img {
         grid-template-columns: 1fr;
     }
 }
+
+/* PINEAPPLE HEALTH BENEFITS */
+
+.pineapple-benefits {
+    padding: 85px 7%;
+    background: #ffffff;
+}
+
+.pineapple-benefits-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.pineapple-benefit-card {
+    padding: 30px 25px;
+    background: #fffdf5;
+    border: 1px solid #f1e8cf;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.pineapple-benefit-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 28px rgba(120, 95, 25, 0.09);
+}
+
+.pineapple-benefit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 20px;
+    background: #fff3cf;
+    border-radius: 16px;
+    font-size: 27px;
+}
+
+.pineapple-benefit-card h3 {
+    color: #17613c;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.pineapple-benefit-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .pineapple-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .pineapple-benefits {
+        padding: 65px 5%;
+    }
+
+    .pineapple-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
