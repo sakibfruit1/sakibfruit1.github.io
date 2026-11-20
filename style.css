@@ -3437,3 +3437,73 @@ img {
         grid-template-columns: 1fr;
     }
 }
+
+/* PINEAPPLE - HOW TO ENJOY */
+
+.pineapple-enjoy {
+    padding: 85px 7%;
+    background: #fffdf7;
+}
+
+.pineapple-enjoy-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pineapple-enjoy-card {
+    padding: 28px 22px;
+    background: #ffffff;
+    border: 1px solid #f1e8cf;
+    border-radius: 18px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pineapple-enjoy-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 28px rgba(120, 95, 25, 0.09);
+}
+
+.pineapple-enjoy-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 18px;
+    background: #fff3cf;
+    border-radius: 18px;
+    font-size: 29px;
+}
+
+.pineapple-enjoy-card h3 {
+    color: #17613c;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.pineapple-enjoy-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .pineapple-enjoy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .pineapple-enjoy {
+        padding: 65px 5%;
+    }
+
+    .pineapple-enjoy-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
