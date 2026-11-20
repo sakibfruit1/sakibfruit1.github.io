@@ -409,5 +409,29 @@
     
 </main>
 
+<script>
+/* WATERMELON SCROLL REVEAL */
+
+const watermelonRevealElements = document.querySelectorAll(
+    '.watermelon-section-intro, .watermelon-nutrition-card, .watermelon-vitamin-card, .watermelon-benefit-card, .watermelon-enjoy-card, .watermelon-deficiency-card, .watermelon-deficiency-note'
+);
+
+const watermelonObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('watermelon-revealed');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+watermelonRevealElements.forEach(element => {
+    element.classList.add('watermelon-reveal');
+    watermelonObserver.observe(element);
+});
+</script>
+    
 </body>
 </html>
