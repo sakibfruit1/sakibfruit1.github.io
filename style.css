@@ -2194,3 +2194,78 @@ img {
     }
 }
 
+/* =================================
+   SAKIBFRUIT - BANANA BENEFITS
+================================= */
+
+.banana-benefits {
+    padding: 85px 7%;
+    background: #fffdf8;
+}
+
+.banana-benefits-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.banana-benefit-card {
+    padding: 30px 25px;
+    background: #ffffff;
+    border: 1px solid #f0eadc;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.banana-benefit-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(80, 60, 20, 0.08);
+}
+
+.banana-benefit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 20px;
+    background: #fff3d4;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+.banana-benefit-card h3 {
+    color: var(--dark-green);
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.banana-benefit-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+    .banana-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .banana-benefits {
+        padding: 65px 5%;
+    }
+
+    .banana-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .banana-benefit-card {
+        padding: 25px 22px;
+    }
+}
+
