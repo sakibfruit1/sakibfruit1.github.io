@@ -4076,3 +4076,89 @@ img {
         gap: 18px;
     }
 }
+
+/* WATERMELON NUTRIENT DEFICIENCY */
+
+.watermelon-deficiency {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.watermelon-deficiency-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1050px;
+    margin: 45px auto 30px;
+}
+
+.watermelon-deficiency-card {
+    background: #fffafa;
+    padding: 30px 25px;
+    border-radius: 18px;
+    border: 1px solid #f5dfe1;
+    box-shadow: 0 8px 25px rgba(180, 45, 60, 0.05);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.watermelon-deficiency-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(180, 45, 60, 0.12);
+}
+
+.watermelon-deficiency-card h3 {
+    color: #c93645;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.watermelon-deficiency-card p {
+    color: #68736d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.watermelon-deficiency-note {
+    max-width: 1050px;
+    margin: 35px auto 0;
+    padding: 25px 30px;
+    background: #fff0f1;
+    border-left: 4px solid #d94350;
+    border-radius: 12px;
+}
+
+.watermelon-deficiency-note strong {
+    display: block;
+    color: #c93645;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.watermelon-deficiency-note p {
+    color: #68736d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 900px) {
+    .watermelon-deficiency-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .watermelon-deficiency {
+        padding: 65px 6%;
+    }
+
+    .watermelon-deficiency-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .watermelon-deficiency-note {
+        padding: 22px;
+    }
+}
