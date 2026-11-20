@@ -2496,3 +2496,26 @@ img {
         transform: none;
     }
 }
+
+/* BANANA SCROLL REVEAL */
+
+.banana-scroll-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    animation: none !important;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.banana-scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .banana-scroll-reveal,
+    .banana-scroll-reveal.revealed {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
