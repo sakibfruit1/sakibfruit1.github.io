@@ -389,5 +389,31 @@
     
 </main>
 
+<script>
+
+// SAKIBFRUIT PINEAPPLE SCROLL REVEAL
+
+const pineappleRevealElements = document.querySelectorAll(
+    '.pineapple-section-intro, .pineapple-nutrition-card, .pineapple-vitamin-card, .pineapple-benefit-card, .pineapple-enjoy-card, .pineapple-deficiency-card, .pineapple-deficiency-note'
+);
+
+const pineappleRevealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('pineapple-revealed');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+pineappleRevealElements.forEach(element => {
+    element.classList.add('pineapple-reveal');
+    pineappleRevealObserver.observe(element);
+});
+
+</script>
+    
 </body>
       </html>
