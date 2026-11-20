@@ -2860,3 +2860,78 @@ img {
         padding: 25px 22px;
     }
 }
+
+/* =================================
+   SAKIBFRUIT - ORANGE BENEFITS
+================================= */
+
+.orange-benefits {
+    padding: 85px 7%;
+    background: #fffaf5;
+}
+
+.orange-benefits-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.orange-benefit-card {
+    padding: 30px 25px;
+    background: #ffffff;
+    border: 1px solid #f4e5d7;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.orange-benefit-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(120, 65, 20, 0.08);
+}
+
+.orange-benefit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 20px;
+    background: #fff0df;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+.orange-benefit-card h3 {
+    color: var(--dark-green);
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.orange-benefit-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+    .orange-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .orange-benefits {
+        padding: 65px 5%;
+    }
+
+    .orange-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .orange-benefit-card {
+        padding: 25px 22px;
+    }
+}
