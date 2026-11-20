@@ -3507,3 +3507,72 @@ img {
         gap: 16px;
     }
 }
+
+/* PINEAPPLE NUTRIENT DEFICIENCY */
+
+.pineapple-deficiency {
+    padding: 85px 7%;
+    background: #fffdf7;
+}
+
+.pineapple-deficiency-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.pineapple-deficiency-card {
+    padding: 30px 25px;
+    background: #ffffff;
+    border: 1px solid #f1e8cf;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.pineapple-deficiency-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 28px rgba(120, 95, 25, 0.09);
+}
+
+.pineapple-deficiency-card h3 {
+    color: #c49a25;
+    font-size: 19px;
+    margin-bottom: 14px;
+}
+
+.pineapple-deficiency-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.pineapple-deficiency-note {
+    max-width: 850px;
+    margin: 35px auto 0;
+    padding: 20px 25px;
+    background: #fff3cf;
+    border-left: 4px solid #c49a25;
+    border-radius: 10px;
+    color: #755f30;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .pineapple-deficiency-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .pineapple-deficiency {
+        padding: 65px 5%;
+    }
+
+    .pineapple-deficiency-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
