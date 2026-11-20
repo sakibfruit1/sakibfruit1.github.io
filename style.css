@@ -1893,3 +1893,111 @@ img {
     }
 }
 
+
+/* =================================
+   SAKIBFRUIT - BANANA HERO
+================================= */
+
+.banana-hero {
+    min-height: 520px;
+    padding: 65px 5%;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 35px;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 90% 50%, #fff1c9 0%, transparent 55%),
+        linear-gradient(110deg, #ffffff 55%, #fffaf0 100%);
+}
+
+.banana-hero-content {
+    max-width: 650px;
+}
+
+.banana-label {
+    display: inline-block;
+    background: #fff3d4;
+    color: #98701d;
+    padding: 9px 17px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.banana-hero h1 {
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.08;
+    font-weight: 800;
+    letter-spacing: -2.5px;
+    margin-bottom: 20px;
+}
+
+.banana-hero h1 span {
+    color: #d9a522;
+    font-style: italic;
+}
+
+.banana-hero-content > p {
+    font-size: 16px;
+    color: var(--muted);
+    max-width: 540px;
+    margin-bottom: 28px;
+}
+
+.banana-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.banana-highlights div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.banana-highlights strong {
+    color: var(--dark-green);
+    font-size: 14px;
+}
+
+.banana-highlights span {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.banana-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark-green);
+    color: white;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.banana-button:hover {
+    background: var(--green);
+    transform: translateY(-3px);
+}
+
+.banana-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.banana-hero-image img {
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    object-fit: contain;
+}
+
