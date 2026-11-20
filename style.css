@@ -3005,3 +3005,25 @@ img {
         grid-template-columns: 1fr;
     }
 }
+
+/* ORANGE SCROLL REVEAL ANIMATION */
+
+.orange-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.orange-reveal.orange-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .orange-reveal,
+    .orange-reveal.orange-revealed {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
