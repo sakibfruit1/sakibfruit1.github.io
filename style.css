@@ -2667,3 +2667,121 @@ img {
             inset 0 0 40px rgba(255, 255, 255, 0.9);
     }
 }
+
+/* =================================
+   SAKIBFRUIT - ORANGE NUTRITION
+================================= */
+
+.orange-nutrition {
+    padding: 85px 7%;
+    background: #fffaf5;
+}
+
+.orange-section-intro {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.orange-section-intro h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    color: var(--dark-green);
+    margin: 15px 0;
+}
+
+.orange-section-intro p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.orange-nutrition-card {
+    max-width: 950px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border: 1px solid #f4e5d7;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(120, 65, 20, 0.06);
+}
+
+.orange-nutrition-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
+.orange-nutrition-heading h3 {
+    color: var(--dark-green);
+    font-size: 20px;
+}
+
+.orange-nutrition-heading span {
+    color: #bd641a;
+    background: #fff0df;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.orange-nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.orange-nutrition-fact {
+    padding: 25px 15px;
+    text-align: center;
+    background: #fff7ef;
+    border: 1px solid #f6e8da;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orange-nutrition-fact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(120, 65, 20, 0.08);
+}
+
+.orange-nutrition-fact strong {
+    display: block;
+    color: #e87919;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.orange-nutrition-fact span {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.orange-nutrition-note {
+    margin-top: 25px;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .orange-nutrition {
+        padding: 65px 5%;
+    }
+
+    .orange-nutrition-card {
+        padding: 22px 16px;
+    }
+
+    .orange-nutrition-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .orange-nutrition-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+   }
