@@ -2340,3 +2340,87 @@ img {
         gap: 16px;
     }
 }
+
+/* =================================
+   SAKIBFRUIT - BANANA DEFICIENCY
+================================= */
+
+.banana-deficiency {
+    padding: 85px 7%;
+    background: #fffdf8;
+}
+
+.banana-deficiency-grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.banana-deficiency-card {
+    padding: 28px 24px;
+    background: #ffffff;
+    border: 1px solid #f0eadc;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.banana-deficiency-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(80, 60, 20, 0.08);
+}
+
+.banana-deficiency-card h3 {
+    color: #b8891c;
+    font-size: 19px;
+    margin-bottom: 13px;
+}
+
+.banana-deficiency-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.banana-deficiency-note {
+    max-width: 1000px;
+    margin: 30px auto 0;
+    padding: 25px 28px;
+    background: #fff3d4;
+    border-left: 4px solid #d9a522;
+    border-radius: 12px;
+}
+
+.banana-deficiency-note strong {
+    display: block;
+    color: #856116;
+    font-size: 15px;
+    margin-bottom: 9px;
+}
+
+.banana-deficiency-note p {
+    color: #6f603e;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+    .banana-deficiency-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .banana-deficiency {
+        padding: 65px 5%;
+    }
+
+    .banana-deficiency-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banana-deficiency-note {
+        padding: 22px 20px;
+    }
+}
