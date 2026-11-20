@@ -2424,3 +2424,75 @@ img {
         padding: 22px 20px;
     }
 }
+
+/* =================================
+   SAKIBFRUIT - BANANA ANIMATIONS
+================================= */
+
+/* HERO ENTRANCE */
+
+.banana-hero-content {
+    animation: bananaFadeUp 1.2s ease both;
+}
+
+.banana-hero-image {
+    animation: bananaFadeIn 1.5s ease both;
+}
+
+/* SECTION INTRO ANIMATION */
+
+.banana-section-intro {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: bananaFadeUp 0.9s ease forwards;
+}
+
+/* CARD HOVER POLISH */
+
+.banana-nutrition-fact,
+.banana-vitamin-card,
+.banana-benefit-card,
+.banana-enjoy-card,
+.banana-deficiency-card {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+/* ANIMATION KEYFRAMES */
+
+@keyframes bananaFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bananaFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* REDUCED MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .banana-hero-content,
+    .banana-hero-image,
+    .banana-section-intro {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
