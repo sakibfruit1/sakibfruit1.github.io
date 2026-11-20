@@ -3027,3 +3027,52 @@ img {
         transition: none;
     }
 }
+
+/* PINEAPPLE GLOWING IMAGE FRAME */
+
+.pineapple-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.pineapple-image-frame {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #fffbea 0%,
+            #fff2c9 55%,
+            #f8e5a3 100%
+        );
+
+    box-shadow:
+        0 0 35px rgba(210, 170, 45, 0.18),
+        0 0 75px rgba(210, 170, 45, 0.13),
+        inset 0 0 35px rgba(255, 255, 255, 0.8);
+
+    border: 1px solid rgba(210, 170, 45, 0.18);
+
+    animation: pineappleGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes pineappleGlow {
+    from {
+        box-shadow:
+            0 0 25px rgba(210, 170, 45, 0.15),
+            0 0 55px rgba(210, 170, 45, 0.10),
+            inset 0 0 25px rgba(255, 255, 255, 0.7);
+    }
+
+    to {
+        box-shadow:
+            0 0 45px rgba(210, 170, 45, 0.28),
+            0 0 90px rgba(210, 170, 45, 0.18),
+            inset 0 0 40px rgba(255, 255, 255, 0.9);
+    }
+}
