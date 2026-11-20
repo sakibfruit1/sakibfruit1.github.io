@@ -2935,3 +2935,73 @@ img {
         padding: 25px 22px;
     }
 }
+
+/* =================================
+   SAKIBFRUIT - ORANGE DEFICIENCY
+================================= */
+
+.orange-deficiency {
+    padding: 85px 7%;
+    background: #fffaf5;
+}
+
+.orange-deficiency-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.orange-deficiency-card {
+    padding: 30px 25px;
+    background: #ffffff;
+    border: 1px solid #f3e5d8;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.orange-deficiency-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 28px rgba(120, 65, 20, 0.08);
+}
+
+.orange-deficiency-card h3 {
+    color: #e87919;
+    font-size: 19px;
+    margin-bottom: 14px;
+}
+
+.orange-deficiency-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.orange-deficiency-note {
+    max-width: 850px;
+    margin: 35px auto 0;
+    padding: 20px 25px;
+    background: #fff0df;
+    border-left: 4px solid #e87919;
+    border-radius: 10px;
+    color: #75502f;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .orange-deficiency-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .orange-deficiency {
+        padding: 65px 5%;
+    }
+
+    .orange-deficiency-grid {
+        grid-template-columns: 1fr;
+    }
+}
