@@ -3576,3 +3576,26 @@ img {
     }
 }
 
+/* PINEAPPLE SCROLL REVEAL ANIMATION */
+
+.pineapple-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.pineapple-reveal.pineapple-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pineapple-reveal,
+    .pineapple-reveal.pineapple-revealed {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+
