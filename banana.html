@@ -410,5 +410,31 @@
         
     </main>
 
+<!-- BANANA SCROLL REVEAL SCRIPT -->
+<script>
+    const bananaRevealElements = document.querySelectorAll(
+        '.banana-section-intro, .banana-nutrition-card, .banana-vitamin-card, .banana-benefit-card, .banana-enjoy-card, .banana-deficiency-card, .banana-deficiency-note'
+    );
+
+    const bananaRevealObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('banana-scroll-reveal', 'revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+    bananaRevealElements.forEach(element => {
+        element.classList.add('banana-scroll-reveal');
+        bananaRevealObserver.observe(element);
+    });
+</script>
+    
 </body>
 </html>
