@@ -4011,3 +4011,68 @@ img {
     }
 }
 
+/* WATERMELON HOW TO ENJOY */
+
+.watermelon-enjoy {
+    padding: 90px 8%;
+    background: #fffafa;
+}
+
+.watermelon-enjoy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 45px auto 0;
+}
+
+.watermelon-enjoy-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #f5dfe1;
+    box-shadow: 0 8px 25px rgba(180, 45, 60, 0.05);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.watermelon-enjoy-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(180, 45, 60, 0.12);
+}
+
+.watermelon-enjoy-card > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background: #ffecee;
+    border-radius: 15px;
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.watermelon-enjoy-card h3 {
+    color: #c93645;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.watermelon-enjoy-card p {
+    color: #68736d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+    .watermelon-enjoy {
+        padding: 65px 6%;
+    }
+
+    .watermelon-enjoy-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
