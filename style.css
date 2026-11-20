@@ -2785,3 +2785,78 @@ img {
         flex-direction: column;
     }
    }
+
+/* =================================
+   SAKIBFRUIT - ORANGE VITAMINS
+================================= */
+
+.orange-vitamins {
+    padding: 85px 7%;
+    background: #ffffff;
+}
+
+.orange-vitamins-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.orange-vitamin-card {
+    padding: 30px 25px;
+    background: #fff7ef;
+    border: 1px solid #f6e8da;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.orange-vitamin-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(120, 65, 20, 0.09);
+}
+
+.orange-vitamin-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 20px;
+    background: #ffead7;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+.orange-vitamin-card h3 {
+    color: var(--dark-green);
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.orange-vitamin-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+    .orange-vitamins-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .orange-vitamins {
+        padding: 65px 5%;
+    }
+
+    .orange-vitamins-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .orange-vitamin-card {
+        padding: 25px 22px;
+    }
+}
