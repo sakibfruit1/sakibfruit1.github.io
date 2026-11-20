@@ -2001,3 +2001,121 @@ img {
     object-fit: contain;
 }
 
+/* =================================
+   SAKIBFRUIT - BANANA NUTRITION
+================================= */
+
+.banana-nutrition {
+    padding: 85px 7%;
+    background: #fffdf8;
+}
+
+.banana-section-intro {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.banana-section-intro h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    color: var(--dark-green);
+    margin: 15px 0;
+}
+
+.banana-section-intro p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.banana-nutrition-card {
+    max-width: 950px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border: 1px solid #f0eadc;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(80, 60, 20, 0.06);
+}
+
+.banana-nutrition-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
+.banana-nutrition-heading h3 {
+    color: var(--dark-green);
+    font-size: 20px;
+}
+
+.banana-nutrition-heading span {
+    color: #98701d;
+    background: #fff3d4;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.banana-nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.banana-nutrition-fact {
+    padding: 25px 15px;
+    text-align: center;
+    background: #fffaf0;
+    border: 1px solid #f4ecd9;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banana-nutrition-fact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(80, 60, 20, 0.08);
+}
+
+.banana-nutrition-fact strong {
+    display: block;
+    color: #c18c16;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.banana-nutrition-fact span {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.banana-nutrition-note {
+    margin-top: 25px;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .banana-nutrition {
+        padding: 65px 5%;
+    }
+
+    .banana-nutrition-card {
+        padding: 22px 16px;
+    }
+
+    .banana-nutrition-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .banana-nutrition-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
