@@ -3598,4 +3598,166 @@ img {
     }
 }
 
+/* WATERMELON HERO SECTION */
 
+.watermelon-hero {
+    min-height: 580px;
+    padding: 80px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    background: linear-gradient(
+        110deg,
+        #ffffff 0%,
+        #fffafa 55%,
+        #fff0f0 100%
+    );
+}
+
+.watermelon-hero-content {
+    max-width: 560px;
+}
+
+.watermelon-label {
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 30px;
+    background: #ffe5e5;
+    color: #c83d48;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.watermelon-hero h1 {
+    color: #17221c;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.12;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+.watermelon-hero h1 span {
+    color: #d94350;
+    font-style: italic;
+}
+
+.watermelon-hero-content > p {
+    color: #66736b;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.watermelon-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-bottom: 32px;
+}
+
+.watermelon-highlights div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.watermelon-highlights strong {
+    color: #17613c;
+    font-size: 13px;
+}
+
+.watermelon-highlights span {
+    color: #849087;
+    font-size: 11px;
+}
+
+.watermelon-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #d94350;
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.watermelon-button:hover {
+    background: #b92e3b;
+    transform: translateY(-3px);
+}
+
+/* WATERMELON GREEN GLOWING FRAME */
+
+.watermelon-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.watermelon-image-frame {
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        #f3fff1 0%,
+        #e2f5dc 55%,
+        #c9e9c1 100%
+    );
+    border: 1px solid rgba(55, 145, 65, 0.18);
+    box-shadow:
+        0 0 35px rgba(55, 145, 65, 0.18),
+        0 0 75px rgba(55, 145, 65, 0.13),
+        inset 0 0 35px rgba(255, 255, 255, 0.8);
+    animation: watermelonGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes watermelonGlow {
+    from {
+        box-shadow:
+            0 0 25px rgba(55, 145, 65, 0.15),
+            0 0 55px rgba(55, 145, 65, 0.10),
+            inset 0 0 25px rgba(255, 255, 255, 0.7);
+    }
+
+    to {
+        box-shadow:
+            0 0 45px rgba(55, 145, 65, 0.28),
+            0 0 90px rgba(55, 145, 65, 0.18),
+            inset 0 0 40px rgba(255, 255, 255, 0.9);
+    }
+}
+
+@media (max-width: 850px) {
+    .watermelon-hero {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 65px 6%;
+    }
+
+    .watermelon-hero-image {
+        max-width: 420px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .watermelon-hero {
+        padding: 55px 5%;
+    }
+
+    .watermelon-hero h1 {
+        font-size: 39px;
+    }
+
+    .watermelon-highlights {
+        gap: 20px;
+    }
+}
