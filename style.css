@@ -3196,3 +3196,108 @@ img {
         gap: 20px;
     }
 }
+
+/* PINEAPPLE NUTRITION SECTION */
+
+.pineapple-nutrition {
+    padding: 85px 7%;
+    background: #ffffff;
+}
+
+.pineapple-section-intro {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.pineapple-section-intro h2 {
+    color: var(--dark-green);
+    font-size: 34px;
+    margin: 16px 0;
+}
+
+.pineapple-section-intro p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.pineapple-nutrition-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    background: #fffdf5;
+    border: 1px solid #f1e8cf;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(100, 80, 20, 0.06);
+}
+
+.pineapple-nutrition-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.pineapple-nutrition-heading h3 {
+    color: var(--dark-green);
+    font-size: 19px;
+}
+
+.pineapple-nutrition-heading span {
+    color: #a28a45;
+    font-size: 12px;
+}
+
+.pineapple-nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.pineapple-nutrition-fact {
+    padding: 24px 12px;
+    background: #ffffff;
+    border: 1px solid #f2e9d4;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.pineapple-nutrition-fact strong {
+    display: block;
+    color: #c49a25;
+    font-size: 25px;
+    margin-bottom: 9px;
+}
+
+.pineapple-nutrition-fact span {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.pineapple-nutrition-note {
+    margin-top: 25px;
+    color: #8b8b7c;
+    font-size: 12px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .pineapple-nutrition {
+        padding: 65px 5%;
+    }
+
+    .pineapple-nutrition-card {
+        padding: 22px 16px;
+    }
+
+    .pineapple-nutrition-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .pineapple-section-intro h2 {
+        font-size: 28px;
+    }
+   }
