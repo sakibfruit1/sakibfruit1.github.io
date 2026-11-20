@@ -2119,3 +2119,78 @@ img {
     }
 }
 
+/* =================================
+   SAKIBFRUIT - BANANA VITAMINS
+================================= */
+
+.banana-vitamins {
+    padding: 85px 7%;
+    background: #ffffff;
+}
+
+.banana-vitamins-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.banana-vitamin-card {
+    padding: 30px 25px;
+    background: #fffaf0;
+    border: 1px solid #f3ead5;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.banana-vitamin-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(80, 60, 20, 0.09);
+}
+
+.banana-vitamin-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 20px;
+    background: #fff0c9;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+.banana-vitamin-card h3 {
+    color: var(--dark-green);
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.banana-vitamin-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+    .banana-vitamins-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .banana-vitamins {
+        padding: 65px 5%;
+    }
+
+    .banana-vitamins-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .banana-vitamin-card {
+        padding: 25px 22px;
+    }
+}
+
