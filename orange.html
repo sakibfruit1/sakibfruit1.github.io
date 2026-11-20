@@ -403,5 +403,31 @@
         
     </main>
 
+<script>
+
+// SAKIBFRUIT ORANGE SCROLL REVEAL
+
+const orangeRevealElements = document.querySelectorAll(
+    '.orange-section-intro, .orange-nutrition-card, .orange-vitamin-card, .orange-benefit-card, .orange-enjoy-card, .orange-deficiency-card, .orange-deficiency-note'
+);
+
+const orangeRevealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('orange-revealed');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+orangeRevealElements.forEach(element => {
+    element.classList.add('orange-reveal');
+    orangeRevealObserver.observe(element);
+});
+
+</script>
+    
 </body>
 </html>
