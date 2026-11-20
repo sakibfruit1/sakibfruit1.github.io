@@ -2269,3 +2269,74 @@ img {
     }
 }
 
+/* =================================
+   SAKIBFRUIT - HOW TO ENJOY BANANA
+================================= */
+
+.banana-enjoy {
+    padding: 85px 7%;
+    background: #ffffff;
+}
+
+.banana-enjoy-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.banana-enjoy-card {
+    padding: 28px 22px;
+    background: #fffaf0;
+    border: 1px solid #f3ead5;
+    border-radius: 18px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.banana-enjoy-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 28px rgba(80, 60, 20, 0.08);
+}
+
+.banana-enjoy-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 18px;
+    background: #fff0c9;
+    border-radius: 18px;
+    font-size: 29px;
+}
+
+.banana-enjoy-card h3 {
+    color: var(--dark-green);
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.banana-enjoy-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+    .banana-enjoy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .banana-enjoy {
+        padding: 65px 5%;
+    }
+
+    .banana-enjoy-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
