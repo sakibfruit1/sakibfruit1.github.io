@@ -3076,3 +3076,123 @@ img {
             inset 0 0 40px rgba(255, 255, 255, 0.9);
     }
 }
+
+/* PINEAPPLE HERO SECTION */
+
+.pineapple-hero {
+    min-height: 580px;
+    padding: 80px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    background: linear-gradient(
+        110deg,
+        #ffffff 0%,
+        #fffdf5 55%,
+        #fff5d8 100%
+    );
+}
+
+.pineapple-hero-content {
+    max-width: 560px;
+}
+
+.pineapple-label {
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 30px;
+    background: #fff1c9;
+    color: #98751e;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.pineapple-hero h1 {
+    color: #17221c;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.12;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+.pineapple-hero h1 span {
+    color: #d6a72b;
+    font-style: italic;
+}
+
+.pineapple-hero-content > p {
+    color: #66736b;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.pineapple-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-bottom: 32px;
+}
+
+.pineapple-highlights div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.pineapple-highlights strong {
+    color: #17613c;
+    font-size: 13px;
+}
+
+.pineapple-highlights span {
+    color: #849087;
+    font-size: 11px;
+}
+
+.pineapple-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #08613b;
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.pineapple-button:hover {
+    background: #034b2c;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 850px) {
+    .pineapple-hero {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 65px 6%;
+    }
+
+    .pineapple-hero-image {
+        max-width: 420px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .pineapple-hero {
+        padding: 55px 5%;
+    }
+
+    .pineapple-hero h1 {
+        font-size: 39px;
+    }
+
+    .pineapple-highlights {
+        gap: 20px;
+    }
+}
