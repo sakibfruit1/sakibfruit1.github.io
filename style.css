@@ -5292,3 +5292,88 @@ img {
 }
 
 
+/* AVOCADO NUTRIENT DEFICIENCY SECTION */
+
+.avocado-deficiency {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.avocado-deficiency-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.avocado-deficiency-card {
+    background: #f5faf2;
+    padding: 30px 25px;
+    border-radius: 20px;
+    border: 1px solid #e3efde;
+    transition: 0.35s ease;
+}
+
+.avocado-deficiency-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(40, 100, 50, 0.10);
+}
+
+.avocado-deficiency-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background: #e3f2df;
+    border-radius: 16px;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.avocado-deficiency-card h3 {
+    color: #234b2d;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.avocado-deficiency-card p {
+    color: #68776c;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.avocado-deficiency-note {
+    max-width: 950px;
+    margin: 35px auto 0;
+    padding: 22px 25px;
+    background: #eaf5e6;
+    border-left: 4px solid #328447;
+    border-radius: 12px;
+}
+
+.avocado-deficiency-note p {
+    color: #46634b;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .avocado-deficiency {
+        padding: 70px 6%;
+    }
+
+    .avocado-deficiency-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .avocado-deficiency-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
