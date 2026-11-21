@@ -6332,3 +6332,72 @@ img {
 }
 
 
+/* COCONUT VITAMINS AND MINERALS */
+
+.coconut-vitamins {
+    padding: 90px 8%;
+    background: #fffaf2;
+}
+
+.coconut-vitamins-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.coconut-vitamin-card {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 20px;
+    border: 1px solid #f0dfc9;
+    transition: 0.35s ease;
+}
+
+.coconut-vitamin-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(128, 83, 47, 0.10);
+}
+
+.coconut-vitamin-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background: #f5e9d9;
+    border-radius: 16px;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.coconut-vitamin-card h3 {
+    color: #654426;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.coconut-vitamin-card p {
+    color: #716456;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .coconut-vitamins {
+        padding: 70px 6%;
+    }
+
+    .coconut-vitamins-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .coconut-vitamins-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
