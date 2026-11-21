@@ -5227,3 +5227,68 @@ img {
     }
 }
 
+
+/* AVOCADO HOW TO ENJOY SECTION */
+
+.avocado-enjoy {
+    padding: 90px 8%;
+    background: #f5faf2;
+}
+
+.avocado-enjoy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.avocado-enjoy-card {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 20px;
+    border: 1px solid #e3efde;
+    transition: 0.35s ease;
+}
+
+.avocado-enjoy-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(40, 100, 50, 0.10);
+}
+
+.avocado-enjoy-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background: #e3f2df;
+    border-radius: 17px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.avocado-enjoy-card h3 {
+    color: #234b2d;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.avocado-enjoy-card p {
+    color: #68776c;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .avocado-enjoy {
+        padding: 70px 6%;
+    }
+
+    .avocado-enjoy-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
