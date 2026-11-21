@@ -5565,3 +5565,127 @@ img {
 }
 
 
+/* GUAVA NUTRITION SECTION */
+
+.guava-nutrition {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.guava-section-intro {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.guava-section-intro span {
+    color: #579b48;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.guava-section-intro h2 {
+    color: #25452a;
+    font-size: clamp(30px, 4vw, 42px);
+    margin: 15px 0;
+}
+
+.guava-section-intro p {
+    color: #68766a;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.guava-nutrition-card {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #f5faf2;
+    border: 1px solid #e3efdd;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(55, 110, 50, 0.07);
+}
+
+.guava-nutrition-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.guava-nutrition-heading h3 {
+    color: #315a32;
+    font-size: 22px;
+}
+
+.guava-nutrition-heading span {
+    color: #397c3c;
+    background: #e4f1df;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.guava-nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.guava-nutrition-fact {
+    background: #ffffff;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid #e6efe1;
+    transition: 0.3s ease;
+}
+
+.guava-nutrition-fact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(55, 110, 50, 0.09);
+}
+
+.guava-nutrition-fact h4 {
+    color: #579b48;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.guava-nutrition-fact p {
+    color: #68766a;
+    font-size: 14px;
+    margin: 0;
+}
+
+.guava-nutrition-note {
+    color: #7b887e;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 28px;
+}
+
+@media (max-width: 650px) {
+    .guava-nutrition {
+        padding: 65px 6%;
+    }
+
+    .guava-nutrition-card {
+        padding: 22px 16px;
+    }
+
+    .guava-nutrition-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .guava-nutrition-heading {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
