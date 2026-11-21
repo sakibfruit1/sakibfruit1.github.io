@@ -4360,3 +4360,119 @@ img {
         gap: 20px;
     }
    }
+
+/* PAWPAW NUTRITION FACTS */
+
+.pawpaw-nutrition {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.pawpaw-section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.pawpaw-section-intro h2 {
+    color: #17221c;
+    font-size: clamp(30px, 4vw, 40px);
+    margin: 18px 0 15px;
+}
+
+.pawpaw-section-intro p {
+    color: #66736b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.pawpaw-nutrition-card {
+    max-width: 1000px;
+    margin: 45px auto 0;
+    padding: 35px;
+    background: #fffaf3;
+    border: 1px solid #f4e2cd;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(196, 106, 25, 0.07);
+}
+
+.pawpaw-nutrition-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.pawpaw-nutrition-heading h3 {
+    color: #17221c;
+    font-size: 22px;
+}
+
+.pawpaw-nutrition-heading span {
+    color: #c46a19;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pawpaw-nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.pawpaw-nutrition-fact {
+    padding: 25px 15px;
+    background: #ffffff;
+    border: 1px solid #f4e2cd;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pawpaw-nutrition-fact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(196, 106, 25, 0.1);
+}
+
+.pawpaw-nutrition-fact strong {
+    display: block;
+    color: #e58a25;
+    font-size: 28px;
+    margin-bottom: 9px;
+}
+
+.pawpaw-nutrition-fact span {
+    color: #66736b;
+    font-size: 14px;
+}
+
+.pawpaw-nutrition-note {
+    margin-top: 25px;
+    color: #788078;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 700px) {
+    .pawpaw-nutrition {
+        padding: 65px 6%;
+    }
+
+    .pawpaw-nutrition-card {
+        padding: 22px 16px;
+    }
+
+    .pawpaw-nutrition-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .pawpaw-nutrition-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
