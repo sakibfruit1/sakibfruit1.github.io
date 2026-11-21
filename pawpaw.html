@@ -399,5 +399,29 @@
     
 </main>
 
+<script>
+/* PAWPAW SCROLL REVEAL */
+
+const pawpawRevealElements = document.querySelectorAll(
+    '.pawpaw-section-intro, .pawpaw-nutrition-card, .pawpaw-vitamin-card, .pawpaw-benefit-card, .pawpaw-enjoy-card, .pawpaw-deficiency-card, .pawpaw-deficiency-note'
+);
+
+const pawpawObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('pawpaw-revealed');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+pawpawRevealElements.forEach(element => {
+    element.classList.add('pawpaw-reveal');
+    pawpawObserver.observe(element);
+});
+                                                </script>
+    
 </body>
 </html>
