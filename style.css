@@ -4772,3 +4772,28 @@ img {
         padding: 22px;
     }
        }
+
+/* PAWPAW SCROLL REVEAL ANIMATION */
+
+.pawpaw-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.pawpaw-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* REDUCED MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .pawpaw-reveal,
+    .pawpaw-revealed {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
