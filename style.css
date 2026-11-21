@@ -5999,3 +5999,26 @@ img {
 }
 
 
+/* GUAVA SCROLL REVEAL ANIMATIONS */
+
+.guava-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.guava-reveal.guava-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .guava-reveal,
+    .guava-reveal.guava-revealed {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+
