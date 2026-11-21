@@ -4961,3 +4961,129 @@ img {
     }
 }
 
+
+/* AVOCADO NUTRITION SECTION */
+
+.avocado-nutrition {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.avocado-section-intro {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.avocado-section-intro span {
+    color: #328447;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.avocado-section-intro h2 {
+    color: #183b25;
+    font-size: clamp(30px, 4vw, 42px);
+    margin: 15px 0;
+}
+
+.avocado-section-intro p {
+    color: #68776c;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.avocado-nutrition-card {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #f5faf2;
+    border: 1px solid #e2efdd;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(40, 100, 50, 0.07);
+}
+
+.avocado-nutrition-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.avocado-nutrition-heading h3 {
+    color: #234b2d;
+    font-size: 22px;
+}
+
+.avocado-nutrition-heading span {
+    color: #328447;
+    background: #e3f2df;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.avocado-nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.avocado-nutrition-fact {
+    background: #ffffff;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid #e7f0e3;
+    transition: 0.3s ease;
+}
+
+.avocado-nutrition-fact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(40, 100, 50, 0.09);
+}
+
+.avocado-nutrition-fact h4 {
+    color: #328447;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.avocado-nutrition-fact p {
+    color: #68776c;
+    font-size: 14px;
+    margin: 0;
+}
+
+.avocado-nutrition-note {
+    color: #7b887e;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 28px;
+}
+
+@media (max-width: 650px) {
+    .avocado-nutrition {
+        padding: 65px 6%;
+    }
+
+    .avocado-nutrition-card {
+        padding: 22px 16px;
+    }
+
+    .avocado-nutrition-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .avocado-nutrition-heading {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
