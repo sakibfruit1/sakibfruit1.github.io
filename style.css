@@ -6206,3 +6206,129 @@ img {
     }
 }
 
+
+/* COCONUT NUTRITION SECTION */
+
+.coconut-nutrition {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.coconut-section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.coconut-section-intro > span {
+    display: inline-block;
+    color: #98663a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+}
+
+.coconut-section-intro h2 {
+    color: #30251c;
+    font-size: clamp(28px, 4vw, 38px);
+    margin-bottom: 15px;
+}
+
+.coconut-section-intro p {
+    color: #716456;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.coconut-nutrition-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #fffaf2;
+    border: 1px solid #f0dfc9;
+    border-radius: 22px;
+}
+
+.coconut-nutrition-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
+.coconut-nutrition-heading h3 {
+    color: #4b3523;
+    font-size: 21px;
+}
+
+.coconut-nutrition-heading span {
+    color: #80532f;
+    background: #f0dfc9;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.coconut-nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.coconut-fact {
+    background: #ffffff;
+    padding: 25px 15px;
+    border-radius: 15px;
+    border: 1px solid #f0e7db;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.coconut-fact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(128, 83, 47, 0.10);
+}
+
+.coconut-fact strong {
+    display: block;
+    color: #98663a;
+    font-size: 27px;
+    margin-bottom: 9px;
+}
+
+.coconut-fact span {
+    color: #716456;
+    font-size: 13px;
+}
+
+.coconut-nutrition-note {
+    color: #806f5e;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-top: 25px;
+}
+
+@media (max-width: 700px) {
+    .coconut-nutrition {
+        padding: 70px 6%;
+    }
+
+    .coconut-nutrition-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .coconut-nutrition-card {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 420px) {
+    .coconut-nutrition-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
