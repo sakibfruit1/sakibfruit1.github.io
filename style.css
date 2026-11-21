@@ -5377,3 +5377,26 @@ img {
     }
 }
 
+
+/* AVOCADO SCROLL REVEAL ANIMATION */
+
+.avocado-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.avocado-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .avocado-reveal,
+    .avocado-revealed {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
