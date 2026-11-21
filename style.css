@@ -4548,3 +4548,75 @@ img {
         gap: 18px;
     }
 }
+
+/* PAWPAW HEALTH BENEFITS */
+
+.pawpaw-benefits {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.pawpaw-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1150px;
+    margin: 45px auto 0;
+}
+
+.pawpaw-benefit-card {
+    background: #fffaf3;
+    padding: 30px 25px;
+    border-radius: 18px;
+    border: 1px solid #f4e2cd;
+    box-shadow: 0 8px 25px rgba(196, 106, 25, 0.05);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.pawpaw-benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(196, 106, 25, 0.12);
+}
+
+.pawpaw-benefit-card > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background: #fff0dc;
+    border-radius: 15px;
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.pawpaw-benefit-card h3 {
+    color: #c46a19;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.pawpaw-benefit-card p {
+    color: #68736d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 900px) {
+    .pawpaw-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .pawpaw-benefits {
+        padding: 65px 6%;
+    }
+
+    .pawpaw-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
