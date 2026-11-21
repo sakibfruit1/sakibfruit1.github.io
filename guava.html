@@ -415,6 +415,31 @@
     
 </main>
 
+    
+
+<script>
+/* GUAVA SCROLL REVEAL */
+
+const guavaRevealElements = document.querySelectorAll(
+    '.guava-nutrition, .guava-vitamins, .guava-benefits, .guava-enjoy, .guava-deficiency'
+);
+
+const guavaObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('guava-revealed');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+guavaRevealElements.forEach(element => {
+    element.classList.add('guava-reveal');
+    guavaObserver.observe(element);
+});
+</script>
 
 </body>
 </html>
