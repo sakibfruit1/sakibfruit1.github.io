@@ -406,5 +406,30 @@
 </main>
 
 
+<script>
+/* AVOCADO SCROLL REVEAL */
+
+const avocadoRevealElements = document.querySelectorAll(
+    '.avocado-section-intro, .avocado-nutrition-card, .avocado-vitamin-card, .avocado-benefit-card, .avocado-enjoy-card, .avocado-deficiency-card, .avocado-deficiency-note'
+);
+
+const avocadoObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('avocado-revealed');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+avocadoRevealElements.forEach(element => {
+    element.classList.add('avocado-reveal');
+    avocadoObserver.observe(element);
+});
+</script>
+
+    
 </body>
 </html>
