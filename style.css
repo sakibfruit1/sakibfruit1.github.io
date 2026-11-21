@@ -4686,3 +4686,89 @@ img {
         gap: 18px;
     }
 }
+
+/* PAWPAW NUTRIENT DEFICIENCY */
+
+.pawpaw-deficiency {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.pawpaw-deficiency-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1050px;
+    margin: 45px auto 30px;
+}
+
+.pawpaw-deficiency-card {
+    background: #fffaf3;
+    padding: 30px 25px;
+    border-radius: 18px;
+    border: 1px solid #f4e2cd;
+    box-shadow: 0 8px 25px rgba(196, 106, 25, 0.05);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.pawpaw-deficiency-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(196, 106, 25, 0.12);
+}
+
+.pawpaw-deficiency-card h3 {
+    color: #c46a19;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.pawpaw-deficiency-card p {
+    color: #68736d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.pawpaw-deficiency-note {
+    max-width: 1050px;
+    margin: 35px auto 0;
+    padding: 25px 30px;
+    background: #fff0dc;
+    border-left: 4px solid #e58a25;
+    border-radius: 12px;
+}
+
+.pawpaw-deficiency-note strong {
+    display: block;
+    color: #c46a19;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.pawpaw-deficiency-note p {
+    color: #68736d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 900px) {
+    .pawpaw-deficiency-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .pawpaw-deficiency {
+        padding: 65px 6%;
+    }
+
+    .pawpaw-deficiency-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .pawpaw-deficiency-note {
+        padding: 22px;
+    }
+       }
