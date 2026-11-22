@@ -407,5 +407,31 @@
         
     </main>
 
+
+<script>
+// APPLE SCROLL REVEAL
+
+const appleRevealSections = document.querySelectorAll(
+    '.apple-nutrition, .apple-vitamins, .apple-benefits, .apple-enjoy, .apple-deficiency'
+);
+
+const appleRevealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('apple-revealed');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.12
+});
+
+appleRevealSections.forEach(section => {
+    section.classList.add('apple-reveal');
+    appleRevealObserver.observe(section);
+});
+</script>
+
+    
 </body>
 </html>
