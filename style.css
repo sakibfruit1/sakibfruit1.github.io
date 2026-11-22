@@ -8196,3 +8196,89 @@ img {
     }
 }
 
+
+/* GRAPES NUTRIENT DEFICIENCY */
+
+.grapes-deficiency {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.grapes-deficiency-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: 0 auto 35px;
+}
+
+.grapes-deficiency-card {
+    background: #f8f3ff;
+    padding: 30px 25px;
+    border-radius: 20px;
+    border: 1px solid #e8dcf5;
+    transition: 0.35s ease;
+}
+
+.grapes-deficiency-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(113, 53, 168, 0.08);
+}
+
+.grapes-deficiency-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: #eee2ff;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.grapes-deficiency-card h3 {
+    color: #51217f;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.grapes-deficiency-card p {
+    color: #70647b;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.grapes-deficiency-note {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 22px 25px;
+    background: #f1e9ff;
+    border-left: 4px solid #7135a8;
+    border-radius: 12px;
+}
+
+.grapes-deficiency-note p {
+    color: #5f4b6e;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* GRAPES DEFICIENCY RESPONSIVE */
+
+@media (max-width: 800px) {
+    .grapes-deficiency-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grapes-deficiency {
+        padding: 65px 6%;
+    }
+
+    .grapes-deficiency-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
