@@ -7673,3 +7673,28 @@ img {
     }
 }
 
+
+/* APPLE SCROLL REVEAL ANIMATION */
+
+.apple-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.apple-reveal.apple-revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* REDUCED MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .apple-reveal,
+    .apple-reveal.apple-revealed {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
