@@ -7982,3 +7982,74 @@ img {
     }
 }
 
+
+/* GRAPES VITAMINS & MINERALS */
+
+.grapes-vitamins {
+    padding: 90px 8%;
+    background: #f8f3ff;
+}
+
+.grapes-vitamins-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.grapes-vitamin-card {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 20px;
+    border: 1px solid #e8dcf5;
+    transition: 0.35s ease;
+}
+
+.grapes-vitamin-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(113, 53, 168, 0.08);
+}
+
+.grapes-vitamin-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: #eee2ff;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.grapes-vitamin-card h3 {
+    color: #51217f;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.grapes-vitamin-card p {
+    color: #70647b;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* GRAPES VITAMINS RESPONSIVE */
+
+@media (max-width: 800px) {
+    .grapes-vitamins-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grapes-vitamins {
+        padding: 65px 6%;
+    }
+
+    .grapes-vitamins-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
