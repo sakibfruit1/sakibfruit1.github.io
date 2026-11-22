@@ -7444,3 +7444,74 @@ img {
     }
 }
 
+
+/* APPLE HEALTH BENEFITS */
+
+.apple-benefits {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.apple-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.apple-benefit-card {
+    background: #fff7f8;
+    padding: 30px 25px;
+    border-radius: 20px;
+    border: 1px solid #f5d5d9;
+    transition: 0.35s ease;
+}
+
+.apple-benefit-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(201, 54, 69, 0.08);
+}
+
+.apple-benefit-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: #ffe9ec;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.apple-benefit-card h3 {
+    color: #a92738;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.apple-benefit-card p {
+    color: #66736b;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* APPLE BENEFITS RESPONSIVE */
+
+@media (max-width: 800px) {
+    .apple-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .apple-benefits {
+        padding: 65px 6%;
+    }
+
+    .apple-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
