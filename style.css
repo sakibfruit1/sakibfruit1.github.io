@@ -7587,3 +7587,89 @@ img {
     }
 }
 
+
+/* APPLE NUTRIENT DEFICIENCY */
+
+.apple-deficiency {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.apple-deficiency-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: 0 auto 35px;
+}
+
+.apple-deficiency-card {
+    background: #fff7f8;
+    padding: 30px 25px;
+    border-radius: 20px;
+    border: 1px solid #f5d5d9;
+    transition: 0.35s ease;
+}
+
+.apple-deficiency-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(201, 54, 69, 0.08);
+}
+
+.apple-deficiency-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: #ffe9ec;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.apple-deficiency-card h3 {
+    color: #a92738;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.apple-deficiency-card p {
+    color: #66736b;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.apple-deficiency-note {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 22px 25px;
+    background: #fff0f1;
+    border-left: 4px solid #c93645;
+    border-radius: 12px;
+}
+
+.apple-deficiency-note p {
+    color: #5f4b4e;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* APPLE DEFICIENCY RESPONSIVE */
+
+@media (max-width: 800px) {
+    .apple-deficiency-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .apple-deficiency {
+        padding: 65px 6%;
+    }
+
+    .apple-deficiency-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
