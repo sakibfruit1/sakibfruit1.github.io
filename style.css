@@ -7859,3 +7859,126 @@ img {
     }
 }
 
+
+/* GRAPES NUTRITION SECTION */
+
+.grapes-nutrition {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.grapes-section-intro {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.grapes-section-intro span {
+    display: inline-block;
+    color: #7135a8;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+}
+
+.grapes-section-intro h2 {
+    color: #29143d;
+    font-size: clamp(28px, 4vw, 38px);
+    margin-bottom: 15px;
+}
+
+.grapes-section-intro p {
+    color: #70647b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.grapes-nutrition-card {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #fbf8ff;
+    border: 1px solid #e8dcf5;
+    border-radius: 22px;
+}
+
+.grapes-nutrition-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e8dcf5;
+}
+
+.grapes-nutrition-heading h3 {
+    color: #29143d;
+    font-size: 22px;
+}
+
+.grapes-nutrition-heading span {
+    color: #7135a8;
+    background: #eee2ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.grapes-nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.grapes-fact {
+    background: #ffffff;
+    padding: 25px 15px;
+    border-radius: 16px;
+    border: 1px solid #eee5f7;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.grapes-fact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(113, 53, 168, 0.08);
+}
+
+.grapes-fact h4 {
+    color: #7135a8;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.grapes-fact p {
+    color: #70647b;
+    font-size: 13px;
+}
+
+.grapes-nutrition-note {
+    color: #81758b;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* GRAPES NUTRITION RESPONSIVE */
+
+@media (max-width: 650px) {
+    .grapes-nutrition {
+        padding: 65px 6%;
+    }
+
+    .grapes-nutrition-card {
+        padding: 22px 16px;
+    }
+
+    .grapes-nutrition-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+
