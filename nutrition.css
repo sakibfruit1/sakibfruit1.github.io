@@ -551,3 +551,120 @@ img {
     font-size: 14px;
     line-height: 1.8;
 }
+
+/* =================================
+   TABLET RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 20px 4%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .navigation {
+        gap: 18px;
+    }
+
+    .nutrition-hero {
+        padding: 80px 5%;
+        gap: 35px;
+    }
+
+    .essential-nutrients,
+    .fruit-nutrition,
+    .nutrition-comparison,
+    .why-nutrients,
+    .fruit-eating-tips {
+        padding: 80px 5%;
+    }
+
+    .nutrients-grid,
+    .fruit-nutrition-grid,
+    .nutrient-benefits-grid,
+    .fruit-tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* =================================
+   MOBILE RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+
+    .navigation {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .header-actions {
+        display: none;
+    }
+
+    .nutrition-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 6%;
+    }
+
+    .nutrition-hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nutrition-hero-image {
+        width: 100%;
+    }
+
+    .nutrition-image-frame {
+        height: 320px;
+    }
+
+    .nutrients-grid,
+    .fruit-nutrition-grid,
+    .nutrient-benefits-grid,
+    .fruit-tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .essential-nutrients,
+    .fruit-nutrition,
+    .nutrition-comparison,
+    .why-nutrients,
+    .fruit-eating-tips {
+        padding: 65px 6%;
+    }
+
+}
+
+/* =================================
+   SMOOTH PAGE FINISHING DETAILS
+================================= */
+
+::selection {
+    background: #258cf5;
+    color: #ffffff;
+}
+
+.nutrition-button,
+.header-button,
+.fruit-nutrition-info a {
+    cursor: pointer;
+}
+
+.nutrient-card,
+.fruit-nutrition-card,
+.nutrient-benefit-card,
+.fruit-tip-card {
+    height: 100%;
+}
