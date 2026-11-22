@@ -6775,3 +6775,119 @@ img {
     }
 }
 
+
+/* PASSION FRUIT NUTRITION */
+
+.passion-nutrition {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.passion-section-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.passion-section-intro > span {
+    color: #8545a8;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.passion-section-intro h2 {
+    color: #30203d;
+    font-size: 34px;
+    margin: 15px 0;
+}
+
+.passion-section-intro p {
+    color: #74657d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.passion-nutrition-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #fffaff;
+    border: 1px solid #ead8f3;
+    border-radius: 22px;
+}
+
+.passion-nutrition-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.passion-nutrition-heading h3 {
+    color: #654078;
+    font-size: 20px;
+}
+
+.passion-nutrition-heading span {
+    color: #8545a8;
+    background: #f0e2f8;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.passion-nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.passion-fact {
+    background: #ffffff;
+    border: 1px solid #f0e5f5;
+    border-radius: 16px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.passion-fact strong {
+    display: block;
+    color: #8545a8;
+    font-size: 25px;
+    margin-bottom: 9px;
+}
+
+.passion-fact span {
+    color: #74657d;
+    font-size: 13px;
+}
+
+.passion-nutrition-note {
+    color: #817487;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+    .passion-nutrition {
+        padding: 70px 6%;
+    }
+
+    .passion-nutrition-card {
+        padding: 22px 16px;
+    }
+
+    .passion-nutrition-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .passion-section-intro h2 {
+        font-size: 28px;
+    }
+}
+
+
