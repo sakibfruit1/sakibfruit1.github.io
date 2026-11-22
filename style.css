@@ -7095,3 +7095,85 @@ img {
 }
 
 
+/* PASSION FRUIT NUTRIENT DEFICIENCY */
+
+.passion-deficiency {
+    padding: 90px 8%;
+    background: #ffffff;
+}
+
+.passion-deficiency-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.passion-deficiency-card {
+    background: #fffaff;
+    padding: 30px 25px;
+    border-radius: 20px;
+    border: 1px solid #ead8f3;
+    transition: 0.35s ease;
+}
+
+.passion-deficiency-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(111, 57, 145, 0.10);
+}
+
+.passion-deficiency-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background: #f0e2f8;
+    border-radius: 16px;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.passion-deficiency-card h3 {
+    color: #654078;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.passion-deficiency-card p {
+    color: #74657d;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.passion-deficiency-note {
+    max-width: 850px;
+    margin: 35px auto 0;
+    padding: 22px 25px;
+    background: #f0e2f8;
+    border-left: 4px solid #8545a8;
+    border-radius: 12px;
+    color: #654078;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+    .passion-deficiency {
+        padding: 70px 6%;
+    }
+
+    .passion-deficiency-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .passion-deficiency-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
