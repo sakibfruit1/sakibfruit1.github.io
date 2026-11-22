@@ -7515,3 +7515,75 @@ img {
     }
 }
 
+
+/* APPLE HOW TO ENJOY */
+
+.apple-enjoy {
+    padding: 90px 8%;
+    background: #fff7f8;
+}
+
+.apple-enjoy-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.apple-enjoy-card {
+    background: #ffffff;
+    padding: 30px 22px;
+    border-radius: 20px;
+    border: 1px solid #f5d5d9;
+    text-align: center;
+    transition: 0.35s ease;
+}
+
+.apple-enjoy-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(201, 54, 69, 0.08);
+}
+
+.apple-enjoy-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background: #ffe9ec;
+    border-radius: 18px;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.apple-enjoy-card h3 {
+    color: #a92738;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.apple-enjoy-card p {
+    color: #66736b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* APPLE ENJOY RESPONSIVE */
+
+@media (max-width: 900px) {
+    .apple-enjoy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .apple-enjoy {
+        padding: 65px 6%;
+    }
+
+    .apple-enjoy-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
