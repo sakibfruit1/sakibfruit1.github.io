@@ -8282,3 +8282,10 @@ img {
     }
 }
 
+/* POPULAR FRUIT CARD LINKS */
+
+.fruit-card {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
