@@ -8124,3 +8124,75 @@ img {
     }
 }
 
+
+/* GRAPES HOW TO ENJOY */
+
+.grapes-enjoy {
+    padding: 90px 8%;
+    background: #f8f3ff;
+}
+
+.grapes-enjoy-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.grapes-enjoy-card {
+    background: #ffffff;
+    padding: 30px 22px;
+    border-radius: 20px;
+    border: 1px solid #e8dcf5;
+    text-align: center;
+    transition: 0.35s ease;
+}
+
+.grapes-enjoy-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(113, 53, 168, 0.08);
+}
+
+.grapes-enjoy-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background: #eee2ff;
+    border-radius: 18px;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.grapes-enjoy-card h3 {
+    color: #51217f;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.grapes-enjoy-card p {
+    color: #70647b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* GRAPES ENJOY RESPONSIVE */
+
+@media (max-width: 900px) {
+    .grapes-enjoy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grapes-enjoy {
+        padding: 65px 6%;
+    }
+
+    .grapes-enjoy-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
