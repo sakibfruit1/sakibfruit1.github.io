@@ -7031,3 +7031,67 @@ img {
 }
 
 
+/* PASSION FRUIT HOW TO ENJOY */
+
+.passion-enjoy {
+    padding: 90px 8%;
+    background: #fdf8ff;
+}
+
+.passion-enjoy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.passion-enjoy-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #ead8f3;
+    transition: 0.35s ease;
+}
+
+.passion-enjoy-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(111, 57, 145, 0.10);
+}
+
+.passion-enjoy-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background: #f0e2f8;
+    border-radius: 16px;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.passion-enjoy-card h3 {
+    color: #654078;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.passion-enjoy-card p {
+    color: #74657d;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .passion-enjoy {
+        padding: 70px 6%;
+    }
+
+    .passion-enjoy-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
