@@ -332,11 +332,11 @@ img {
 
 .fruit-nutrition-heading h2 span {
     display: block;
-    color: #369bff;
+    color: var(--green);
 }
 
 .fruit-nutrition-heading p {
-    color: #aab8cc;
+    color: var(--muted);
     font-size: 15px;
 }
 
