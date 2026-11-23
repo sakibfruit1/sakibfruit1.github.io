@@ -721,3 +721,53 @@ img {
 .fruit-tip-card {
     height: 100%;
 }
+
+
+/* =================================
+   NUTRITION HERO ANIMATIONS
+================================= */
+
+@keyframes heroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroFadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.nutrition-label {
+    animation: heroFadeUp 1.1s ease both;
+}
+
+.nutrition-hero-content h1 {
+    animation: heroFadeUp 1.2s ease 0.15s both;
+}
+
+.nutrition-hero-content p {
+    animation: heroFadeUp 1.2s ease 0.3s both;
+}
+
+.nutrition-button {
+    animation: heroFadeUp 1.2s ease 0.45s both;
+}
+
+.nutrition-hero-image {
+    animation: heroFadeRight 1.3s ease 0.2s both;
+}
+
