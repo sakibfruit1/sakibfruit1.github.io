@@ -155,7 +155,7 @@ img {
 
 .nutrition-label {
     display: inline-block;
-    color: #369bff;
+    color: var(--green);
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -171,12 +171,12 @@ img {
 
 .nutrition-hero-content h1 span {
     display: block;
-    color: #369bff;
+    color: var(--green);
 }
 
 .nutrition-hero-content p {
     max-width: 520px;
-    color: #aab8cc;
+    color: var(--muted);
     font-size: 16px;
     margin-bottom: 32px;
 }
@@ -184,12 +184,17 @@ img {
 .nutrition-button {
     display: inline-block;
     padding: 14px 27px;
-    background: #258cf5;
-    color: #ffffff;
+    background: var(--green);
+    color: var(--white);
     border-radius: 7px;
     font-size: 14px;
     font-weight: 700;
     transition: 0.3s ease;
+}
+
+.nutrition-button:hover {
+    background: var(--dark-green);
+    transform: translateY(-3px);
 }
 
 .nutrition-button:hover {
