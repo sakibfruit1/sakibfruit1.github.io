@@ -693,8 +693,8 @@ img {
 ================================= */
 
 ::selection {
-    background: #258cf5;
-    color: #ffffff;
+    background: var(--green);
+    color: var(--white);
 }
 
 .nutrition-button,
