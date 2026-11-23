@@ -213,10 +213,10 @@ img {
     width: 100%;
     max-width: 450px;
     height: 420px;
-    border: 1px solid rgba(54, 155, 255, 0.35);
+    border: 1px solid rgba(22, 128, 68, 0.20);
     border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 0 35px rgba(54, 155, 255, 0.12);
+    box-shadow: 0 8px 25px rgba(7, 85, 47, 0.08);
 }
 
 .nutrition-image-frame img {
@@ -231,7 +231,7 @@ img {
 
 .essential-nutrients {
     padding: 100px 8%;
-    background: #0b1120;
+    background: var(--white);
 }
 
 .nutrients-heading {
@@ -242,7 +242,7 @@ img {
 
 .section-label {
     display: inline-block;
-    color: #369bff;
+    color: var(--green);
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 2.5px;
@@ -257,11 +257,11 @@ img {
 
 .nutrients-heading h2 span {
     display: block;
-    color: #369bff;
+    color: var(--green);
 }
 
 .nutrients-heading p {
-    color: #aab8cc;
+    color: var(--muted);
     font-size: 15px;
 }
 
