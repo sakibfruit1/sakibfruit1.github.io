@@ -431,11 +431,11 @@ img {
 
 .comparison-heading h2 span {
     display: block;
-    color: #369bff;
+    color: var(--green);
 }
 
 .comparison-heading p {
-    color: #aab8cc;
+    color: var(--muted);
     font-size: 15px;
     line-height: 1.8;
 }
