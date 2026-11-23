@@ -364,7 +364,7 @@ img {
     width: 100%;
     height: 220px;
     overflow: hidden;
-    background: #0b1120;
+    background: var(--light-green);
 }
 
 .fruit-nutrition-image img {
@@ -385,11 +385,11 @@ img {
 .fruit-nutrition-info h3 {
     font-size: 21px;
     margin-bottom: 12px;
-    color: #ffffff;
+    color: var(--dark-green);
 }
 
 .fruit-nutrition-info p {
-    color: #aab8cc;
+    color: var(--muted);
     font-size: 14px;
     line-height: 1.8;
     margin-bottom: 20px;
