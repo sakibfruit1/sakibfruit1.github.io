@@ -440,13 +440,14 @@ img {
     line-height: 1.8;
 }
 
+
 /* =================================
    WHY FRUIT NUTRIENTS MATTER
 ================================= */
 
 .why-nutrients {
     padding: 100px 8%;
-    background: #081426;
+    background: var(--white);
 }
 
 .why-nutrients-heading {
@@ -463,11 +464,11 @@ img {
 
 .why-nutrients-heading h2 span {
     display: block;
-    color: #369bff;
+    color: var(--green);
 }
 
 .why-nutrients-heading p {
-    color: #aab8cc;
+    color: var(--muted);
     font-size: 15px;
     line-height: 1.8;
 }
@@ -480,16 +481,16 @@ img {
 
 .nutrient-benefit-card {
     padding: 30px 25px;
-    background: #101d32;
-    border: 1px solid rgba(54, 155, 255, 0.14);
+    background: var(--light-green);
+    border: 1px solid #e4eee5;
     border-radius: 15px;
     transition: 0.3s ease;
 }
 
 .nutrient-benefit-card:hover {
     transform: translateY(-6px);
-    border-color: #258cf5;
-    box-shadow: 0 10px 25px rgba(37, 140, 245, 0.10);
+    border-color: var(--green);
+    box-shadow: 0 10px 25px rgba(7, 85, 47, 0.08);
 }
 
 .benefit-icon {
@@ -498,7 +499,7 @@ img {
     height: 52px;
     align-items: center;
     justify-content: center;
-    background: rgba(54, 155, 255, 0.12);
+    background: var(--white);
     border-radius: 12px;
     font-size: 25px;
     margin-bottom: 18px;
@@ -507,13 +508,15 @@ img {
 .nutrient-benefit-card h3 {
     font-size: 18px;
     margin-bottom: 12px;
+    color: var(--dark-green);
 }
 
 .nutrient-benefit-card p {
-    color: #aab8cc;
+    color: var(--muted);
     font-size: 14px;
     line-height: 1.8;
 }
+
 
 
 /* =================================
