@@ -347,8 +347,8 @@ img {
 }
 
 .fruit-nutrition-card {
-    background: #101d32;
-    border: 1px solid rgba(54, 155, 255, 0.14);
+    background: var(--white);
+    border: 1px solid #e4eee5;
     border-radius: 15px;
     overflow: hidden;
     transition: 0.3s ease;
@@ -356,8 +356,8 @@ img {
 
 .fruit-nutrition-card:hover {
     transform: translateY(-7px);
-    border-color: #258cf5;
-    box-shadow: 0 12px 30px rgba(37, 140, 245, 0.10);
+    border-color: var(--green);
+    box-shadow: 0 12px 30px rgba(7, 85, 47, 0.08);
 }
 
 .fruit-nutrition-image {
