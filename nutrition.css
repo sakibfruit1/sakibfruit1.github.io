@@ -315,7 +315,7 @@ img {
 
 .fruit-nutrition {
     padding: 100px 8%;
-    background: #081426;
+    background: var(--light-green);
 }
 
 .fruit-nutrition-heading {
