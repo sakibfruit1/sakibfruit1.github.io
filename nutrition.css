@@ -1,4 +1,18 @@
 /* =================================
+   SAKIBFRUIT COLOUR PALETTE
+================================= */
+
+:root {
+    --green: #168044;
+    --dark-green: #07552f;
+    --light-green: #e9f5e8;
+    --text: #17221c;
+    --muted: #66736b;
+    --white: #ffffff;
+    --background: #fbfcfa;
+}
+
+/* =================================
    GLOBAL NUTRITION PAGE STYLES
 ================================= */
 
