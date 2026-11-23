@@ -291,7 +291,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(54, 155, 255, 0.12);
+    background: var(--light-green);
     border-radius: 12px;
     font-size: 27px;
     margin-bottom: 22px;
@@ -300,11 +300,11 @@ img {
 .nutrient-card h3 {
     font-size: 20px;
     margin-bottom: 12px;
-    color: #ffffff;
+    color: var(--dark-green);
 }
 
 .nutrient-card p {
-    color: #aab8cc;
+    color: var(--muted);
     font-size: 14px;
     line-height: 1.8;
 }
