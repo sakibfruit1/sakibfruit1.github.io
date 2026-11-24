@@ -793,3 +793,18 @@ a {
 .benefits-hero-image {
     animation: benefitsFadeRight 1.3s ease 0.2s both;
 }
+
+/* =================================
+   BENEFITS SCROLL REVEAL
+================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
