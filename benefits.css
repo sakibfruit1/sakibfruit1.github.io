@@ -745,3 +745,51 @@ a {
 .healthy-tip-card {
     height: 100%;
 }
+
+/* =================================
+   BENEFITS HERO ANIMATIONS
+================================= */
+
+@keyframes benefitsFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes benefitsFadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.benefits-label {
+    animation: benefitsFadeUp 1.1s ease both;
+}
+
+.benefits-hero-content h1 {
+    animation: benefitsFadeUp 1.2s ease 0.15s both;
+}
+
+.benefits-hero-content p {
+    animation: benefitsFadeUp 1.2s ease 0.3s both;
+}
+
+.benefits-hero-content .benefits-button {
+    animation: benefitsFadeUp 1.2s ease 0.45s both;
+}
+
+.benefits-hero-image {
+    animation: benefitsFadeRight 1.3s ease 0.2s both;
+}
