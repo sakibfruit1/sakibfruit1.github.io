@@ -1,0 +1,747 @@
+
+/* =================================
+   SAKIBFRUIT BENEFITS PAGE
+================================= */
+
+/* COLOUR PALETTE */
+
+:root {
+    --green: #168044;
+    --dark-green: #07552f;
+    --light-green: #e9f5e8;
+    --text: #17221c;
+    --muted: #66736b;
+    --white: #ffffff;
+    --background: #fbfcfa;
+}
+
+
+/* GENERAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.header {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px 3%;
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    border-bottom: 1px solid #edf0ec;
+    position: relative;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -1.8px;
+    white-space: nowrap;
+    color: var(--text);
+}
+
+.logo span:last-child {
+    color: var(--green);
+}
+
+.logo-leaf {
+    color: var(--green);
+    font-size: 38px;
+    margin-right: 7px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 4px;
+    margin: 0 20px;
+    white-space: nowrap;
+}
+
+.navigation a {
+    padding: 10px 9px;
+    border-radius: 0;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    position: relative;
+    transition: color 0.3s ease;
+    color: var(--text);
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background: var(--green);
+    transition: width 0.3s ease;
+}
+
+.navigation a:hover::after,
+.navigation .active::after {
+    width: calc(100% - 18px);
+}
+
+.navigation a:hover,
+.navigation .active {
+    background: transparent;
+    color: var(--green);
+}
+
+.header-button {
+    display: inline-block;
+    padding: 11px 20px;
+    background: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 6px;
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.header-button:hover {
+    background: var(--dark-green);
+    border-color: var(--dark-green);
+}
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.benefits-hero {
+    min-height: 620px;
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background: var(--light-green);
+}
+
+.benefits-hero-content {
+    flex: 1;
+    max-width: 580px;
+}
+
+.benefits-label {
+    display: inline-block;
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+}
+
+.benefits-hero-content h1 {
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.15;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.benefits-hero-content h1 span {
+    display: block;
+    color: var(--green);
+}
+
+.benefits-hero-content p {
+    max-width: 520px;
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.benefits-button {
+    display: inline-block;
+    padding: 14px 27px;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.benefits-button:hover {
+    background: var(--dark-green);
+    transform: translateY(-3px);
+}
+
+.benefits-hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits-image-frame {
+    width: 100%;
+    max-width: 450px;
+    height: 420px;
+    border: 1px solid rgba(22, 128, 68, 0.20);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(7, 85, 47, 0.08);
+}
+
+.benefits-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =================================
+   WHY FRUITS SECTION
+================================= */
+
+.why-fruits {
+    padding: 100px 8%;
+    background: var(--white);
+}
+
+.why-fruits-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    margin-bottom: 15px;
+}
+
+.why-fruits-heading h2 {
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.why-fruits-heading h2 span {
+    display: block;
+    color: var(--green);
+}
+
+.why-fruits-heading p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.why-fruits-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.why-fruits-card {
+    padding: 32px 27px;
+    background: var(--light-green);
+    border: 1px solid #e4eee5;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.why-fruits-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--green);
+    box-shadow: 0 10px 30px rgba(7, 85, 47, 0.08);
+}
+
+.why-icon {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 12px;
+    font-size: 27px;
+    margin-bottom: 22px;
+}
+
+.why-fruits-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--dark-green);
+}
+
+.why-fruits-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   MAIN FRUIT BENEFITS
+================================= */
+
+.fruit-benefits {
+    padding: 100px 8%;
+    background: var(--light-green);
+}
+
+.fruit-benefits-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.fruit-benefits-heading h2 {
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.fruit-benefits-heading h2 span {
+    display: block;
+    color: var(--green);
+}
+
+.fruit-benefits-heading p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.fruit-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.fruit-benefit-card {
+    padding: 32px 27px;
+    background: var(--white);
+    border: 1px solid #e4eee5;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.fruit-benefit-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--green);
+    box-shadow: 0 10px 30px rgba(7, 85, 47, 0.08);
+}
+
+.benefit-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-green);
+    border-radius: 12px;
+    font-size: 27px;
+    margin-bottom: 22px;
+}
+
+.fruit-benefit-card h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+    color: var(--dark-green);
+}
+
+.fruit-benefit-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   FRUIT NUTRIENTS SECTION
+================================= */
+
+.fruit-nutrients {
+    padding: 100px 8%;
+    background: var(--white);
+}
+
+.fruit-nutrients-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.fruit-nutrients-heading h2 {
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.fruit-nutrients-heading h2 span {
+    display: block;
+    color: var(--green);
+}
+
+.fruit-nutrients-heading p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.fruit-nutrients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.fruit-nutrient-card {
+    padding: 30px 25px;
+    background: var(--light-green);
+    border: 1px solid #e4eee5;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.fruit-nutrient-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--green);
+    box-shadow: 0 10px 25px rgba(7, 85, 47, 0.08);
+}
+
+.fruit-nutrient-icon {
+    display: inline-flex;
+    width: 52px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 12px;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.fruit-nutrient-card h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+    color: var(--dark-green);
+}
+
+.fruit-nutrient-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   HEALTHY FRUIT TIPS
+================================= */
+
+.healthy-fruit-tips {
+    padding: 100px 8%;
+    background: var(--light-green);
+}
+
+.healthy-tips-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.healthy-tips-heading h2 {
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.healthy-tips-heading h2 span {
+    display: block;
+    color: var(--green);
+}
+
+.healthy-tips-heading p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.healthy-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.healthy-tip-card {
+    padding: 30px 25px;
+    background: var(--white);
+    border: 1px solid #e4eee5;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.healthy-tip-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--green);
+    box-shadow: 0 10px 25px rgba(7, 85, 47, 0.08);
+}
+
+.tip-icon {
+    display: inline-flex;
+    width: 52px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-green);
+    border-radius: 12px;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.healthy-tip-card h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+    color: var(--dark-green);
+}
+
+.healthy-tip-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   CLOSING SECTION
+================================= */
+
+.benefits-cta {
+    padding: 100px 8%;
+    text-align: center;
+    background: var(--white);
+}
+
+.benefits-cta h2 {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.25;
+}
+
+.benefits-cta h2 span {
+    display: block;
+    color: var(--green);
+}
+
+.benefits-cta p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+.footer {
+    padding: 55px 8% 25px;
+    text-align: center;
+    background: #f1f7f0;
+    border-top: 1px solid #e4eee5;
+}
+
+.footer-logo {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--text);
+    margin-bottom: 15px;
+}
+
+.footer-logo span {
+    color: var(--green);
+}
+
+.footer > p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: var(--dark-green);
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--green);
+}
+
+.footer .copyright {
+    padding-top: 20px;
+    border-top: 1px solid #dce8dc;
+    font-size: 12px;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 20px 4%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .navigation {
+        gap: 18px;
+    }
+
+    .benefits-hero {
+        padding: 80px 5%;
+        gap: 35px;
+    }
+
+    .why-fruits,
+    .fruit-benefits,
+    .fruit-nutrients,
+    .healthy-fruit-tips,
+    .benefits-cta {
+        padding: 80px 5%;
+    }
+
+    .why-fruits-content,
+    .fruit-benefits-grid,
+    .fruit-nutrients-grid,
+    .healthy-tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+
+    .navigation {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 0;
+    }
+
+    .header-actions {
+        display: none;
+    }
+
+    .benefits-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 6%;
+    }
+
+    .benefits-hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .benefits-hero-image {
+        width: 100%;
+    }
+
+    .benefits-image-frame {
+        height: 320px;
+    }
+
+    .why-fruits-content,
+    .fruit-benefits-grid,
+    .fruit-nutrients-grid,
+    .healthy-tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-fruits,
+    .fruit-benefits,
+    .fruit-nutrients,
+    .healthy-fruit-tips,
+    .benefits-cta {
+        padding: 65px 6%;
+    }
+
+}
+
+
+/* =================================
+   FINAL TOUCHES
+================================= */
+
+::selection {
+    background: var(--green);
+    color: var(--white);
+}
+
+.benefits-button,
+.header-button,
+.navigation a {
+    cursor: pointer;
+}
+
+.why-fruits-card,
+.fruit-benefit-card,
+.fruit-nutrient-card,
+.healthy-tip-card {
+    height: 100%;
+}
