@@ -1,0 +1,666 @@
+/* ==============================
+   SHOPPING PAGE
+============================== */
+
+:root {
+    --green: #168044;
+    --dark-green: #07552f;
+    --light-green: #e9f5e8;
+    --text: #17221c;
+    --muted: #66736b;
+    --white: #ffffff;
+    --background: #fbfcfa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 85px 7%;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--dark-green);
+}
+
+.logo span:last-child {
+    color: var(--green);
+}
+
+.logo-leaf {
+    color: var(--green);
+    margin-right: 5px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navigation a {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    color: var(--green);
+}
+
+.header-button {
+    background: var(--green);
+    color: var(--white);
+    padding: 11px 19px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.header-button:hover {
+    background: var(--dark-green);
+}
+
+/* ==============================
+   SHOPPING HERO
+============================== */
+
+.shopping-hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+    background: var(--light-green);
+}
+
+.shopping-hero-content {
+    flex: 1;
+}
+
+.shopping-label,
+.section-label {
+    display: inline-block;
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.shopping-hero-content h1 {
+    font-size: clamp(36px, 4.5vw, 57px);
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.shopping-hero-content h1 span,
+.shopping-categories-heading h2 span,
+.fresh-guide-heading h2 span,
+.fruit-storage-heading h2 span,
+.smart-shopping-heading h2 span,
+.checklist-heading h2 span,
+.shopping-cta h2 span {
+    color: var(--green);
+}
+
+.shopping-hero-content p {
+    max-width: 540px;
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.shopping-button {
+    display: inline-block;
+    background: var(--green);
+    color: var(--white);
+    padding: 14px 24px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.shopping-button:hover {
+    background: var(--dark-green);
+    transform: translateY(-3px);
+}
+
+.shopping-hero-image {
+    flex: 1;
+    max-width: 490px;
+}
+
+.shopping-image-frame {
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.shopping-image-frame img {
+    display: block;
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+}
+
+/* ==============================
+   SHOPPING FRUITS
+============================== */
+
+.shopping-fruits {
+    background: var(--white);
+}
+
+.shopping-fruits-heading,
+.shopping-categories-heading,
+.fresh-guide-heading,
+.fruit-storage-heading,
+.smart-shopping-heading,
+.checklist-heading {
+    max-width: 700px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.shopping-fruits-heading h2,
+.shopping-categories-heading h2,
+.fresh-guide-heading h2,
+.fruit-storage-heading h2,
+.smart-shopping-heading h2,
+.checklist-heading h2 {
+    font-size: clamp(29px, 3.5vw, 40px);
+    line-height: 1.25;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.shopping-fruits-heading p,
+.shopping-categories-heading p,
+.fresh-guide-heading p,
+.fruit-storage-heading p,
+.smart-shopping-heading p,
+.checklist-heading p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.shopping-fruits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 27px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shopping-fruit-card {
+    background: var(--background);
+    border: 1px solid #e9eee9;
+    border-radius: 14px;
+    padding: 13px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.shopping-fruit-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 13px 30px rgba(7, 85, 47, 0.10);
+}
+
+.shopping-fruit-card img {
+    width: 100%;
+    height: 190px;
+    display: block;
+    object-fit: contain;
+    border-radius: 10px;
+    background: var(--white);
+    margin-bottom: 13px;
+}
+
+.fruit-buy-button {
+    display: block;
+    width: 100%;
+    padding: 11px 12px;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.fruit-buy-button:hover {
+    background: var(--dark-green);
+    transform: translateY(-2px);
+}
+
+.shopping-fruit-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 12px;
+    color: var(--dark-green);
+}
+
+/* ==============================
+   FRUIT CATEGORIES
+============================== */
+
+.shopping-categories {
+    background: var(--background);
+}
+
+.shopping-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.shopping-category-card {
+    padding: 32px 27px;
+    background: var(--white);
+    border-radius: 14px;
+    border: 1px solid #edf0ed;
+    transition: 0.3s ease;
+}
+
+.shopping-category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.category-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.shopping-category-card h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.shopping-category-card p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.shopping-category-card a {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* ==============================
+   FRESH FRUIT GUIDE
+============================== */
+
+.fresh-fruit-guide {
+    background: var(--white);
+}
+
+.fresh-guide-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.fresh-guide-card {
+    padding: 28px 22px;
+    background: var(--background);
+    border-radius: 13px;
+    border: 1px solid #edf0ed;
+}
+
+.fresh-guide-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.fresh-guide-card h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.fresh-guide-card p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* ==============================
+   FRUIT STORAGE
+============================== */
+
+.fruit-storage {
+    background: var(--light-green);
+}
+
+.fruit-storage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.fruit-storage-card {
+    padding: 30px 25px;
+    background: var(--white);
+    border-radius: 13px;
+}
+
+.storage-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.fruit-storage-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.fruit-storage-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* ==============================
+   SMART SHOPPING
+============================== */
+
+.smart-shopping {
+    background: var(--white);
+}
+
+.smart-shopping-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.smart-shopping-card {
+    padding: 27px 22px;
+    background: var(--background);
+    border-radius: 13px;
+    border: 1px solid #edf0ed;
+}
+
+.smart-tip-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.smart-shopping-card h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.smart-shopping-card p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* ==============================
+   SHOPPING CHECKLIST
+============================== */
+
+.fruit-shopping-checklist {
+    background: var(--light-green);
+}
+
+.checklist-box {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 15px;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 13px 0;
+    border-bottom: 1px solid #edf0ed;
+}
+
+.checklist-item:last-child {
+    border-bottom: none;
+}
+
+.checkmark {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-green);
+    color: var(--green);
+    border-radius: 50%;
+    font-weight: 800;
+}
+
+.checklist-item p {
+    font-size: 14px;
+    color: var(--text);
+}
+
+/* ==============================
+   CLOSING SECTION
+============================== */
+
+.shopping-cta {
+    text-align: center;
+    background: var(--white);
+}
+
+.shopping-cta h2 {
+    font-size: clamp(29px, 3.5vw, 40px);
+    line-height: 1.25;
+    margin-bottom: 17px;
+}
+
+.shopping-cta p {
+    max-width: 570px;
+    margin: 0 auto 25px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+.footer {
+    padding: 55px 7% 25px;
+    background: var(--dark-green);
+    color: var(--white);
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 27px;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.footer-logo span {
+    color: #9be0a8;
+}
+
+.footer > p {
+    max-width: 500px;
+    margin: 15px auto;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: var(--white);
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #9be0a8;
+}
+
+.copyright {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 12px !important;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 1000px) {
+
+    .shopping-fruits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .fresh-guide-grid,
+    .smart-shopping-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navigation {
+        gap: 13px;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    section {
+        padding: 65px 5%;
+    }
+
+    .header {
+        padding: 17px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 17px;
+        order: 3;
+    }
+
+    .navigation a {
+        font-size: 12px;
+    }
+
+    .header-button {
+        padding: 9px 13px;
+        font-size: 11px;
+    }
+
+    .shopping-hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .shopping-hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .shopping-hero-image {
+        width: 100%;
+    }
+
+    .shopping-image-frame img {
+        height: 280px;
+    }
+
+    .shopping-fruits-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .shopping-fruit-card {
+        padding: 9px;
+    }
+
+    .shopping-fruit-card img {
+        height: 145px;
+    }
+
+    .shopping-fruit-card h3 {
+        font-size: 15px;
+    }
+
+    .shopping-categories-grid,
+    .fruit-storage-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .shopping-fruits-grid {
+        gap: 10px;
+    }
+
+    .shopping-fruit-card img {
+        height: 120px;
+    }
+
+    .fruit-buy-button {
+        font-size: 12px;
+        padding: 9px 6px;
+    }
+
+}
